@@ -1,0 +1,424 @@
+/* =========================================================
+   GLOBAL SETTINGS
+   ========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #cb2d21;
+}
+
+
+/* =========================================================
+   OVERLAY
+   ========================================================= */
+
+.overlay {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* =========================================================
+   NEWSLETTER BOX
+   ========================================================= */
+
+.newsletter-popup {
+    position: relative;
+
+    width: 600px;
+    height: auto;
+
+    padding: 30px;
+
+    background: #ece8d9;
+
+    border-radius: 20px;
+
+    text-align: left;
+
+    /* البداية فوق الشاشة */
+    transform: translateY(-100vh);
+
+    /* حركة النزول */
+    animation: dropDown 0.8s ease forwards;
+}
+
+
+/* حركة سقوط الـ popup من فوق */
+
+@keyframes dropDown {
+
+    0% {
+        transform: translateY(-100vh) rotate(-3deg);
+        opacity: 0;
+    }
+
+    70% {
+        transform: translateY(30px) rotate(1deg);
+        opacity: 1;
+    }
+
+    85% {
+        transform: translateY(-10px) rotate(-0.5deg);
+    }
+
+    100% {
+        transform: translateY(0) rotate(0);
+        opacity: 1;
+    }
+}
+
+/* =========================================================
+   TITLE
+   ========================================================= */
+
+.newsletter-popup h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 10px;
+
+    font-weight: 1000;
+
+    color: #cb2d21;
+}
+
+
+/* =========================================================
+   CLOSE BUTTON
+   ========================================================= */
+
+.close-btn {
+    position: absolute;
+    top: 35px;
+    right: 60px;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+    color: #ece8d9;
+    font-size: 30px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+    background: #cb2d21;
+}
+
+.close-btn.rotate {
+    transform: rotate(360deg);
+}
+/* =========================================================
+   SUBTITLE
+   ========================================================= */
+
+.subtitle {
+    margin-bottom: 30px;
+}
+
+
+/* =========================================================
+   FORM GROUP
+   ========================================================= */
+
+.form-group {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================================================
+   FORM ROW
+   ========================================================= */
+
+.form-row {
+    display: flex;
+
+    gap: 20px;
+}
+
+.form-row .form-group {
+    width: 50%;
+}
+
+
+/* =========================================================
+   INPUT & SELECT
+   ========================================================= */
+
+input:not(.check),
+select {
+    width: 100%;
+
+    height: 45px;
+
+    padding: 10px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+}
+
+
+/* =========================================================
+   HINT
+   ========================================================= */
+
+.hint {
+    margin-top: -5px;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================================================
+   CHECKBOX
+   ========================================================= */
+
+.checkbox-group {
+    margin: 20px 0;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.checkbox-group .check {
+    width: 18px;
+
+    height: 18px;
+
+    margin: 0;
+}
+
+
+/* =========================================================
+   SUBMIT BUTTON
+   ========================================================= */
+
+.submit-btn {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 12px 30px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background: #cb2d21;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 16px;
+}
+
+.submit-btn:hover {
+    opacity: 0.9;
+}
+
+
+/* =========================================================
+   RESPONSIVE - TABLET
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    /* NEWSLETTER BOX */
+
+    .newsletter-popup {
+        width: 90%;
+
+        padding: 25px;
+    }
+
+
+    /* TITLE */
+
+    .newsletter-popup h1 {
+        font-size: 30px;
+
+        text-align: center;
+    }
+
+
+    /* SUBTITLE */
+
+    .subtitle {
+        font-size: 16px;
+
+        margin-bottom: 25px;
+    }
+
+
+    /* FORM ROW */
+
+    .form-row {
+        flex-direction: column;
+
+        gap: 0;
+    }
+
+    .form-row .form-group {
+        width: 100%;
+    }
+
+
+    /* INPUT & SELECT */
+
+    input:not(.check),
+    select {
+        height: 45px;
+    }
+
+
+    /* HINT */
+
+    .hint {
+        font-size: 14px;
+
+        line-height: 1.4;
+    }
+
+
+    /* CHECKBOX */
+
+    .checkbox-group {
+        gap: 8px;
+
+        font-size: 14px;
+    }
+
+    .checkbox-group .check {
+        width: 18px;
+
+        height: 18px;
+
+        flex-shrink: 0;
+    }
+
+
+    /* SUBMIT BUTTON */
+
+    .submit-btn {
+        width: 100%;
+
+        padding: 13px 20px;
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVE - MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    /* NEWSLETTER BOX */
+
+    .newsletter-popup {
+        width: 94%;
+
+        padding: 20px;
+
+        border-radius: 15px;
+    }
+
+
+    /* TITLE */
+
+    .newsletter-popup h1 {
+        font-size: 24px;
+
+        line-height: 1.2;
+
+        padding: 0 25px;
+    }
+
+
+    /* SUBTITLE */
+
+    .subtitle {
+        font-size: 14px;
+
+        margin-bottom: 20px;
+    }
+
+
+    /* FORM GROUP */
+
+    .form-group {
+        gap: 6px;
+
+        margin-bottom: 15px;
+    }
+
+
+    /* LABEL */
+
+    .form-group label {
+        font-size: 14px;
+    }
+
+
+    /* INPUT & SELECT */
+
+    input:not(.check),
+    select {
+        height: 42px;
+
+        padding: 8px;
+
+        font-size: 14px;
+    }
+
+
+    /* HINT */
+
+    .hint {
+        font-size: 13px;
+
+        margin-bottom: 15px;
+    }
+
+
+    /* CHECKBOX */
+
+    .checkbox-group {
+        margin: 15px 0;
+
+        gap: 7px;
+
+        font-size: 13px;
+    }
+
+
+    /* SUBMIT BUTTON */
+
+    .submit-btn {
+        width: 100%;
+
+        padding: 12px;
+
+        font-size: 15px;
+    }
+}

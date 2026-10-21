@@ -1,0 +1,457 @@
+/* =========================================================
+   GLOBAL SETTINGS
+   ========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #cb2d21;
+    min-height: 100vh;
+}
+
+
+/* =========================================================
+   LOGO
+   ========================================================= */
+
+.logo {
+    position: absolute;
+
+    top: 35px;
+    left: 60px;
+
+    z-index: 10;
+}
+
+.logo img {
+    width: 45px;
+    height: auto;
+
+    display: block;
+}
+
+.logo h1 {
+    margin-top: 5px;
+
+    color: #ece8d9;
+
+    font-size: 15px;
+    font-weight: 900;
+
+    letter-spacing: 2px;
+}
+
+
+/* =========================================================
+   CLOSE BUTTON
+   ========================================================= */
+
+.close-btn {
+    position: absolute;
+    top: 35px;
+    right: 60px;
+
+    width: 50px;
+    height: 50px;
+
+    text-decoration: none;
+    color: #ece8d9;
+    font-size: 30px;
+    cursor: pointer;
+
+    transition: transform 0.5s ease;
+}
+
+.close-btn.rotate {
+    transform: rotate(360deg);
+}
+
+/* =========================================================
+   NAV BUTTONS
+   ========================================================= */
+
+.nav-buttons {
+    position: absolute;
+
+    top: 200px;
+    left: 60px;
+
+    display: flex;
+
+    gap: 20px;
+
+    list-style: none;
+}
+
+
+/* =========================================================
+   BUTTON 1
+   ========================================================= */
+
+.nav-item1 {
+      background: black;
+
+     border: 2px solid #faf8f8;
+
+    border-radius: 50px;
+
+    padding: 10px 20px;
+}
+
+.nav-item1 a {
+   
+    color: #ece8d9;
+
+    text-decoration: none;
+
+    font-size: 15px;
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   BUTTON 2
+   ========================================================= */
+
+.nav-item2 {
+    background: black;
+
+    border: 2px solid #faf8f8;
+
+    border-radius: 50px;
+
+    padding: 12px 22px;
+}
+
+.nav-item2 a {
+     background: black;
+    color: #ece8d9;
+
+    text-decoration: none;
+
+    font-size: 15px;
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   MAIN NAV
+   ========================================================= */
+
+.nav {
+    position: absolute;
+
+    top: 280px;
+    left: 60px;
+}
+
+.nav-bar {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+    list-style: none;
+
+   text-transform: uppercase;
+}
+
+
+/* =========================================================
+   NAV LINKS
+   ========================================================= */
+
+.nav-bar li {
+    overflow: hidden;
+}
+
+.nav-bar li a {
+    color: #ece8d9;
+
+    text-decoration: none;
+
+    font-size: 25px;
+    font-weight: 900;
+
+    line-height: 1.05;
+}
+
+.nav-bar li a span {
+    display: block;
+
+    position: relative;
+
+    width: fit-content;
+}
+
+
+/* =========================================================
+   IMAGE
+   ========================================================= */
+
+.img {
+    position: absolute;
+
+    top: 150px;
+    right: 60px;
+
+    width: 25%;
+    height: 500px;
+
+    overflow: hidden;
+
+    border-radius: 15px;
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* =========================================================
+   FOOTER LINE
+   ========================================================= */
+
+
+.footer-line {
+    position: absolute;
+
+    left: 60px;
+    bottom: 70px;
+
+    width: calc(100% - 120px);
+
+    border-top: 1px solid rgba(236, 232, 217, 0.3);
+
+    transform: scaleX(0);
+    transform-origin: left;
+
+    animation: lineMove 1.5s ease forwards;
+}
+
+@keyframes lineMove {
+    to {
+        transform: scaleX(1);
+    }
+}
+/* =========================================================
+   FOOTER NAV
+   ========================================================= */
+
+.nav-footer {
+    position: absolute;
+
+    left: 60px;
+    right: 60px;
+    bottom: 35px;
+
+    padding-top: 15px;
+
+}
+
+.nav-footer .nav-bar {
+    display: flex;
+
+    flex-direction: row;
+
+    gap: 20px;
+}
+
+.nav-bar li {
+    overflow: hidden;
+}
+
+.nav-bar li a {
+    color: #ece8d9;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 900;
+    line-height: 2.05;
+}
+
+.nav-bar li a span {
+    display: block;
+    position: relative;
+    width: fit-content;
+    transition: transform 0.4s ease;
+}
+
+.nav-bar li a span::after {
+    content: attr(data-text);
+
+    position: absolute;
+    left: 0;
+    top: 100%;
+
+    color: #ece8d9;
+}
+
+.nav-bar li a:hover span {
+    transform: translateY(-100%);
+}
+
+/* =========================================================
+   RESPONSIVE - MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    body {
+        min-height: 100vh;
+    }
+
+
+    /* =========================
+       LOGO
+       ========================= */
+
+    .logo {
+        top: 20px;
+        left: 20px;
+    }
+
+    .logo img {
+        width: 25px;
+    }
+
+    .logo h1 {
+        font-size: 20px;
+    }
+
+
+    /* =========================
+       CLOSE
+       ========================= */
+
+    .close-btn {
+        top: 20px;
+        right: 20px;
+
+        width: 45px;
+        height: 45px;
+
+        font-size: 27px;
+    }
+
+
+    /* =========================
+       BUTTONS
+       ========================= */
+
+    .nav-buttons {
+        top: 100px;
+        left: 20px;
+
+        gap: 8px;
+    }
+
+    .nav-item1,
+    .nav-item2 {
+        padding: 9px 14px;
+    }
+
+    .nav-item1 a,
+    .nav-item2 a {
+        font-size: 12px;
+    }
+
+
+    /* =========================
+       MAIN NAV
+       ========================= */
+
+    .nav {
+        top: 175px;
+        left: 20px;
+    }
+
+    .nav-bar {
+        gap: 8px;
+    }
+
+    .nav-bar li a {
+        font-size: 38px;
+    }
+
+
+    /* =========================
+       IMAGE
+       ========================= */
+
+    .img {
+        position: absolute;
+
+        top: 430px;
+        left: 20px;
+        right: auto;
+
+        width: calc(100% - 40px);
+        height: 280px;
+    }
+
+
+    /* =========================
+       FOOTER
+       ========================= */
+
+    .nav-footer {
+        position: absolute;
+
+        top: 750px;
+        bottom: auto;
+
+        left: 20px;
+        right: 20px;
+
+        padding-top: 20px;
+    }
+
+    .nav-footer .nav-bar {
+        display: flex;
+
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        gap: 15px 25px;
+    }
+
+    .nav-footer .nav-bar li span {
+        font-size: 13px;
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVE - SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 400px) {
+
+    .nav-bar li a {
+        font-size: 32px;
+    }
+
+    .img {
+        top: 400px;
+        height: 250px;
+    }
+
+    .nav-footer {
+        top: 680px;
+    }
+
+    .nav-footer .nav-bar {
+        gap: 12px 20px;
+    }
+}

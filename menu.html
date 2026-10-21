@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <title>Menu</title>
+</head>
+
+<body>
+
+    <!-- HEADER / NAVBAR -->
+    <section class="section-1" id="top">
+
+        <div class="header">
+
+            <div class="logo">
+                <a href="http://127.0.0.1:5500/home/index.html">
+                    <img src="logo.png" alt="logo">
+                    <h1>Pho</h1>
+                </a>
+            </div>
+
+            <div class="nav">
+                <ul class="nav-bar">
+                    <li><a href="menu.html"><span data-text="Menu">Menu</span></a></li>
+                    <li><a href="reservations.html"><span data-text="Reservations">Reservations</span></a></li>
+                    <li><a href="http://127.0.0.1:5500/locations/locations.html"><span data-text="Locations">Locations</span></a></li>
+                    <li><a href="nutrition.html"><span data-text="Nutrition">Nutrition</span></a></li>
+                    <li><a href="gift-vouchers.html"><span data-text="Gift Vouchers">Gift Vouchers</span></a></li>
+                    <li class="nav-item1"><a href="pho-to-go.html"><span data-text="Pho To GO">Pho To GO</span></a></li>
+                    <li class="nav-item2"><a href="book-table.html"><span data-text="Book A Table">Book A Table</span></a></li>
+                </ul>
+            </div>
+
+            <a href="nav-icon/nav.html">
+                <div class="icon">
+                    <span class="first-child"></span>
+                    <span class="last-child"></span>
+                </div>
+            </a>
+
+        </div>
+
+        <div class="menu">
+            <h1>MENU</h1>
+        </div>
+
+    </section>
+
+
+    <!-- SECTION 2 -->
+    <section class="section-2">
+        <div class="nav-meals">
+            <ul class="nav-meal">
+                <li><a href="Main Menu.html"><span data-text="Main Menu">Main Menu</span></a></li>
+                <li><a href="Nutritional Menu.html"><span data-text="Nutritional Menu">Nutritional Menu</span></a></li>
+                <li><a href="Kids Menu.html"><span data-text="Kids Menu">Kids Menu</span></a></li>
+                <li><a href="Allergens.html"><span data-text="Allergens">Allergens</span></a></li>
+            </ul>
+        </div>
+    </section>
+
+
+    <!-- SECTION 3: MENU FILTER + CONTENT -->
+    <section class="section-3">
+
+        <!-- MENU FILTER -->
+        <div class="menu-filter">
+
+            <h3>Filter By:</h3>
+
+            <div class="filter-category">
+                <button type="button" class="filter-title" aria-expanded="false" aria-controls="food-list">
+                    Food
+                    <span aria-hidden="true">+</span>
+                </button>
+
+                <ul class="filter-list" id="food-list">
+                    <li><a href="#starters-sides">Starters &amp; Sides</a></li>
+                    <li><a href="#vietnamese-salads">Vietnamese Salads</a></li>
+                    <li><a href="#pho">Pho</a></li>
+                    <li><a href="#curry-noodle-soups">Curry Noodle Soups</a></li>
+                    <li><a href="#curry">Curry</a></li>
+                    <li><a href="#wok-fried-noodles">Wok Fried Noodles</a></li>
+                    <li><a href="#rice-bowls">Rice Bowls</a></li>
+                    <li><a href="#vermicelli-noodles">Vermicelli Noodles</a></li>
+                    <li><a href="#desserts">Desserts</a></li>
+                    <li><a href="#kids">Kids</a></li>
+                </ul>
+            </div>
+
+            <div class="filter-category">
+                <button type="button" class="filter-title" aria-expanded="false" aria-controls="drink-list">
+                    Drink
+                    <span aria-hidden="true">+</span>
+                </button>
+
+                <ul class="filter-list" id="drink-list">
+                    <li><a href="#fresh-juices">Fresh Juices</a></li>
+                    <li><a href="#cocktails">Cocktails</a></li>
+                    <li><a href="#beer-cider">Beer &amp; Cider</a></li>
+                    <li><a href="#wines-sparkling">Wines &amp; Sparkling</a></li>
+                    <li><a href="#teas-coffees">Teas &amp; Coffees</a></li>
+                    <li><a href="#soft-drinks">Soft Drinks</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+
+        <!-- MENU CONTENT -->
+        <div class="menu-content">
+
+            <!-- STARTERS & SIDES -->
+            <section class="menu-section" id="starters-sides">
+                <div class="title">
+                    <h2>Starters &amp; Sides</h2>
+                    <p>Dipping, rolling and sharing are what our starters and sides were made for.</p>
+                </div>
+                <div class="products">
+                    <div class="product">
+                        <img src="https://pho-media.sp.works/wp-content/uploads/2024/09/3.png.webp" alt="Summer Rolls">
+                        <h3>Summer Rolls</h3>
+                        <p>Fresh rice paper summer rolls with vermicelli &amp; pickle. Veggie, chicken, prawn, or THIS isn't chicken</p>
+                    </div>
+                    <div class="product">
+                        <img src="https://pho-media.sp.works/wp-content/uploads/2024/10/2-2.png.webp" alt="Seafood Spring Roll">
+                        <h3>Seafood Spring Roll</h3>
+                        <p>Large crispy spring roll of tiger prawn, crab &amp; pork with nước chấm dipping sauce</p>
+                    </div>
+                    <div class="product">
+                        <!-- TODO: غيّر الصورة دي، هي نفس صورة Seafood Spring Roll -->
+                        <img src="https://pho-media.sp.works/wp-content/uploads/2024/10/2-2.png.webp" alt="Crispy Baby Squid">
+                        <h3>Crispy Baby Squid</h3>
+                        <p>Tender fried baby squid with a salt, pepper &amp; lime dip</p>
+                    </div>
+                    <div class="product"><h3>Chicken Wings</h3><p>Seasoned, crispy chicken wings served with sriracha</p></div>
+                    <div class="product">
+                        <img src="https://pho-media.sp.works/wp-content/uploads/2024/10/4-1.png.webp" alt="Spring Rolls">
+                        <h3>Spring Rolls</h3>
+                        <p>Crispy spring rolls served with lettuce &amp; herbs to wrap &amp; dip. Veggie or pork.</p>
+                    </div>
+                    <div class="product"><h3>Beef Betel</h3><p>Beef wrapped in betel leaves, served with rice vermicelli sheets &amp; nuoc cham</p></div>
+                    <div class="product"><h3>Pork &amp; Lemongrass Meatballs</h3><p>Homemade pork &amp; lemongrass meatballs with lettuce &amp; herbs to wrap &amp; dip</p></div>
+                    <div class="product"><h3>Vietnamese Pancake</h3><p>Savoury crispy pancake with rice papers, herbs &amp; chicken &amp; prawn, tofu or THIS isn't chicken</p></div>
+                    <div class="product"><h3>Morning Glory</h3><p>Stir fried morning glory (water spinach) in garlic</p></div>
+                    <div class="product"><h3>Stir Fried Chinese Leaf</h3><p>Stir fried Chinese leaf in soy sauce</p></div>
+                    <div class="product"><h3>Prawn Crackers</h3><p>With sweet chilli sauce</p></div>
+                    <div class="product"><h3>Prawn-less Crackers</h3><p>With sweet chilli sauce</p></div>
+                </div>
+            </section>
+
+
+            <!-- VIETNAMESE SALADS -->
+            <section class="menu-section" id="vietnamese-salads">
+                <div class="title">
+                    <h2>Vietnamese Salads: Gỏi</h2>
+                    <p>Crispy, colourful, tasty and filling, our delicious spicy Vietnamese salads are light years away from mundane lettuce-based salads.</p>
+                </div>
+                <div class="products">
+                    <div class="product"><h3>Chicken Salad</h3><p>Shredded chicken salad with Vietnamese herbs, peppers and a chilli ginger dressing</p></div>
+                    <div class="product"><h3>Green Papaya Salad</h3><p>Crunchy green papaya salad with peanuts &amp; prawn crackers. Veggie, prawn or vegan THIS isn't chicken</p></div>
+                    <div class="product"><h3>Mango Salad</h3><p>Spicy green mango salad topped with pork, dried shrimp &amp; peanuts</p></div>
+                    <div class="product"><h3>Veggie Salad</h3><p>Same as Goi Ga, minus the chicken, or you can add in vegan THIS isn't chicken</p></div>
+                    <div class="product"><h3>Prawn &amp; Pomelo Salad</h3><p>With red chillies, Vietnamese herbs, roasted coconut &amp; peanuts</p></div>
+                </div>
+            </section>
+
+
+            <!-- PHO -->
+            <section class="menu-section" id="pho">
+                <div class="title">
+                    <h2>Pho</h2>
+                    <p>Phở, pronounced ‘fuh,’ is the national dish of Vietnam. It’s a fantastic steaming bowl of rice noodle soup served with a side plate of fresh herbs to add as you please.</p>
+                </div>
+                <div class="products">
+                    <div class="product"><h3>Beef Brisket Phở</h3><p>Tender brisket (a bit like roast beef) slow cooked in our beef broth</p></div>
+                    <div class="product"><h3>Steak Phở</h3><p>Thinly sliced steak in beef broth</p></div>
+                    <div class="product"><h3>Chicken Phở</h3><p>Chicken breast in chicken broth</p></div>
+                    <div class="product"><h3>Tofu and Mushroom Phở</h3><p>Tofu &amp; button mushrooms in chicken or veggie broth</p></div>
+                    <div class="product"><h3>Steak with Garlic Phở</h3><p>Flash fried steak with garlic (Hanoi style) in beef broth</p></div>
+                    <div class="product"><h3>Beef Combo Phở</h3><p>Steak, brisket &amp; meatballs in beef broth</p></div>
+                    <div class="product"><h3>King Prawn Phở</h3><p>King prawns in chicken or veggie broth</p></div>
+                    <div class="product"><h3>3 Mushroom Phở</h3><p>Enoki, shiitake &amp; button mushrooms in chicken or veggie broth</p></div>
+                </div>
+
+                <div class="title sub-title">
+                    <h2>Hot &amp; Spicy Soups</h2>
+                    <p>Served with phở or bún noodles</p>
+                </div>
+                <div class="products">
+                    <div class="product"><h3>Hot &amp; spicy chicken</h3></div>
+                    <div class="product"><h3>Hot &amp; spicy beef brisket</h3><p>With a chilli shrimp paste</p></div>
+                    <div class="product"><h3>Hot &amp; spicy king prawn</h3></div>
+                    <div class="product"><h3>Hot &amp; spicy tofu &amp; mushroom</h3></div>
+                    <div class="product"><h3>Hot &amp; spicy THIS isn’t chicken</h3></div>
+                    <div class="product"><h3>Hot &amp; spicy 3 mushrooms</h3></div>
+                </div>
+
+                <div class="title sub-title">
+                    <h2>House Special Soups</h2>
+                </div>
+                <div class="products">
+                    <div class="product"><h3>Super Green</h3><p>Morning glory, green beans, pak choi, fresh lime &amp; Thai basil in veggie broth</p></div>
+                    <div class="product"><h3>Spicy Green</h3><p>Chicken, THIS isn’t chicken or tofu, morning glory, green beans, pak choi, fresh lime &amp; Thai basil in spicy veggie broth</p></div>
+                    <div class="product"><h3>Brisket and Mushroom Phở</h3><p>Brisket, enoki &amp; button mushrooms, &amp; creamy egg yolk in beef broth</p></div>
+                    <div class="product"><h3>Crab noodle soup: Bún riêu</h3><p>A Hà Nội classic; vermicelli noodles in a rich tomato &amp; crab broth with wafer thin steak &amp; tofu</p></div>
+                    <div class="product"><h3>Phở house</h3><p>King prawns, chicken &amp; flash fried steak with garlic in beef broth</p></div>
+                </div>
+            </section>
+
+
+            <!-- CURRY NOODLE SOUPS -->
+            <section class="menu-section" id="curry-noodle-soups">
+                <div class="title">
+                    <h2>Curry Noodle Soups</h2>
+                    <p>The marriage of our classic Vietnamese curry and a steaming bowl of noodle soup. Topped with fresh herb salad and slices of red chilli.</p>
+                </div>
+                <div class="products">
+                    <div class="product"><h3>Beef brisket curry noodle soup</h3></div>
+                    <div class="product"><h3>Chicken curry noodle soup</h3></div>
+                    <div class="product"><h3>King prawn curry noodle soup</h3></div>
+                    <div class="product"><h3>THIS isn't chicken curry noodle soup</h3></div>
+                    <div class="product"><h3>Tofu &amp; mushroom curry noodle soup</h3></div>
+                    <div class="product"><h3>3 mushroom curry noodle soup</h3></div>
+                </div>
+            </section>
+
+
+            <!-- CURRY -->
+            <section class="menu-section" id="curry">
+                <div class="title">
+                    <h2>Curry: cà ri</h2>
+                    <p>Rich, fragrant Vietnamese curry. Served with broken rice.</p>
+                </div>
+                <div class="products">
+                    <div class="product"><h3>Chicken Curry</h3><p>Rich, fragrant Vietnamese curry with veggies &amp; mushrooms, served with broken rice &amp; chicken</p></div>
+                    <div class="product"><h3>Brisket Curry</h3><p>Rich, fragrant Vietnamese curry with veggies &amp; mushrooms, served with broken rice &amp; beef brisket</p></div>
+                    <div class="product"><h3>Prawn Curry</h3><p>Rich, fragrant Vietnamese curry with veggies &amp; mushrooms, served with broken rice &amp; king prawns</p></div>
+                    <div class="product"><h3>Fish Curry</h3><p>Rich, fragrant Vietnamese curry with veggies &amp; mushrooms, served with broken rice &amp; white fillet fish.</p></div>
+                    <div class="product"><h3>This Isn't Chicken Curry</h3><p>Rich, fragrant Vietnamese curry with veg &amp; mushrooms, served with rice &amp; vegan THIS isn't chicken</p></div>
+                    <div class="product"><h3>Spicy Prawn Curry</h3><p>Rich Vietnamese curry with red chillies &amp; betel leaf, topped with peanuts &amp; served with broken rice.</p></div>
+                    <div class="product"><h3>Spicy Chicken Curry</h3><p>Rich Vietnamese curry with red chillies &amp; betel leaf, topped with peanuts &amp; served with broken rice.</p></div>
+                    <div class="product"><h3>Spicy THIS isn't chicken Curry</h3><p>Rich Vietnamese curry with red chillies &amp; betel leaf with vegan THIS isn't chicken</p></div>
+                    <div class="product"><h3>Tofu &amp; Mushroom Curry</h3><p>Rich, fragrant Vietnamese curry with veggies &amp; mushrooms, served with broken rice &amp; tofu</p></div>
+                    <div class="product"><h3>Spicy Beef Curry</h3><p>Rich Vietnamese curry with red chillies &amp; betel leaf, topped with peanuts &amp; served with broken rice.</p></div>
+                    <div class="product"><h3>Spicy Tofu Curry</h3><p>Rich Vietnamese curry with red chillies &amp; betel leaf, topped with peanuts &amp; served with broken rice.</p></div>
+                </div>
+
+                <div class="title sub-title">
+                    <h2>Wok Fried Rice: cơm chiên</h2>
+                    <p>Aromatic, spicy wok-fried broken rice.</p>
+                </div>
+                <div class="products">
+                    <div class="product"><h3>Chicken &amp; Dried Shrimp Fried Rice</h3><p>Aromatic, spicy wok-fried broken rice with chicken &amp; dried shrimp with option to add a fried egg</p></div>
+                    <div class="product"><h3>Shiitake &amp; Thai Basil Fried Rice</h3><p>Spicy wok-fried broken rice with shiitake mushroom &amp; Thai basil with option to add a fried egg</p></div>
+                    <div class="product"><h3>THIS isn't Chicken Fried Rice</h3><p>Spicy wok-fried broken rice with vegan THIS isn't chicken</p></div>
+                </div>
+            </section>
+
+
+            <!-- WOK FRIED NOODLES -->
+            <section class="menu-section" id="wok-fried-noodles">
+                <div class="title">
+                    <h2>Wok-fried Noodles: Phở Xào</h2>
+                    <p>Phở xào is a wok fried flat noodle served with crunchy greens, protein and a choice of toppings. All are topped with roasted peanuts and fresh beanshoots.</p>
+                </div>
+                <div class="products">
+                    <div class="product"><h3>Chicken Noodles</h3><p>Wok-fried flat rice noodles with lemongrass, chilli and Asian greens, topped with chicken</p></div>
+                    <div class="product"><h3>THIS isn't chicken Noodles</h3><p>Wok-fried flat rice noodles with lemongrass, chilli and Asian greens, topped with vegan THIS isn't chicken</p></div>
+                    <div class="product"><h3>Beef Noodles</h3><p>Wok-fried flat rice noodles with lemongrass, chilli and Asian greens, topped with beef</p></div>
+                    <div class="product"><h3>Chicken and Prawn Noodles</h3><p>Wok-fried flat rice noodles with lemongrass, chilli and Asian greens, topped with chicken &amp; prawns</p></div>
+                    <div class="product"><h3>Tofu and Mushroom Noodles</h3><p>Wok-fried flat rice noodles with lemongrass, chilli and Asian greens, topped with tofu &amp; mushrooms</p></div>
+                </div>
+            </section>
+
+
+            <!-- RICE BOWLS -->
+            <section class="menu-section" id="rice-bowls">
+                <div class="title">
+                    <h2>Rice Bowls: Món Cơm</h2>
+                    <p>A choice of rice topped with wok-fried Chinese leaf, radish, cucumber &amp; pickles, finished with peanuts, herbs, fresh chillies &amp; nước chấm</p>
+                </div>
+                <div class="products">
+                    <div class="product"><h3>Chicken Rice Bowl</h3><p>Rice bowls topped with loads of veg &amp; herbs, served with marinated chicken thigh</p></div>
+                    <div class="product"><h3>Beef Betel Rice Bowl</h3><p>Rice bowls topped with loads of veg &amp; herbs, served with crispy beef wrapped in betel leaf</p></div>
+                    <div class="product"><h3>Pork Rice Bowl</h3><p>Rice bowls topped with loads of veg &amp; herbs, served with chargrilled pork</p></div>
+                    <div class="product"><h3>3 Meat Rice Bowl</h3><p>Rice bowls topped with loads of veg &amp; herbs, served with pork, beef &amp; chicken</p></div>
+                    <div class="product"><h3>Tofu Rice Bowl</h3><p>Rice bowls topped with loads of veg &amp; herbs, served with tofu, peppers and veg</p></div>
+                    <div class="product"><h3>Vegan Chicken Rice Bowl</h3><p>Rice bowls topped with loads of veg &amp; herbs, served with vegan THIS isn't chicken</p></div>
+                </div>
+            </section>
+
+
+            <!-- VERMICELLI NOODLES -->
+            <section class="menu-section" id="vermicelli-noodles">
+                <div class="title">
+                    <h2>Vermicelli Noodles: Bún</h2>
+                    <p>All served room temp with fresh herbs, veggie spring roll &amp; peanuts.</p>
+                </div>
+                <div class="products">
+                    <div class="product"><h3>Bún Beef</h3><p>Vermicelli rice noodles with a lemongrass and chilli wok-fried topping, served with beef</p></div>
+                    <div class="product"><h3>Bún Chicken</h3><p>Vermicelli rice noodles with a lemongrass and chilli wok-fried topping, served with chicken</p></div>
+                    <div class="product"><h3>Bún King prawn</h3><p>Vermicelli rice noodles with a lemongrass and chilli wok-fried topping, served with king prawns</p></div>
+                    <div class="product"><h3>Bún Nem Nuong Pork Balls</h3><p>Vermicelli rice noodles with a lemongrass and chilli wok-fried topping, served with pork meatballs</p></div>
+                    <div class="product"><h3>Bún Tofu and Mushroom</h3><p>Vermicelli rice noodles with a lemongrass and chilli wok-fried topping, served with tofu &amp; mushroom</p></div>
+                    <div class="product"><h3>Bún Veggie Spring Rolls</h3><p>Vermicelli rice noodles with a lemongrass and chilli wok-fried topping, served with spring rolls</p></div>
+                    <div class="product"><h3>Chả cá Lã Vọng</h3><p>Rice noodles with grilled fish marinated in turmeric with dill, green onion, peanuts &amp; prawn crackers. Inspired by the delicious, iconic dish from Hà Nội</p></div>
+                </div>
+            </section>
+
+
+            <!-- DESSERTS -->
+            <section class="menu-section" id="desserts">
+                <div class="title">
+                    <h2>Desserts</h2>
+                </div>
+                <div class="products">
+                    <div class="product"><h3>Vietnamese Affogato</h3><p>Hot Vietnamese filter coffee to pour over a scoop of condensed milk ice cream</p></div>
+                    <div class="product"><h3>Sorbet</h3><p>2 scoops of raspberry, alphonso mango, coconut or dark chocolate</p></div>
+                    <div class="product"><h3>Pandan Waffle</h3><p>Freshly cooked pandan waffle served with ice cream or sorbet</p></div>
+                    <div class="product"><h3>Ice Cream</h3><p>2 scoops of honey and ginger or Madagascan vanilla</p></div>
+                    <div class="product"><h3>Freshly Cooked Chocolate Waffle</h3><p>With ice cream or sorbet</p></div>
+                    <div class="product"><h3>Crispy Banana Fritters</h3><p>Banana fritter, as is or with ice cream or sorbet</p></div>
+                </div>
+            </section>
+
+
+            <!-- KIDS -->
+            <section class="menu-section" id="kids">
+                <div class="title">
+                    <h2>Kids</h2>
+                    <p>No greens, no onion - not a problem - all our mini mains can be tailored to satisfy the pickiest of eaters, so bring the whole family in to slurp noodles.</p>
+                </div>
+                <div class="products">
+                    <div class="product"><h3>Mini Pho Soup</h3><p>Flat rice noodles in homemade broth - choose from chicken breast, steak or brisket or tofu &amp; mushroom</p></div>
+                    <div class="product"><h3>Wok-fried Noodles</h3><p>Flat rice noodles with a choice of chicken, beef or tofu &amp; mushroom</p></div>
+                    <div class="product"><h3>Chicken Curry</h3><p>Rich, fragrant Vietnamese curry with veggies &amp; mushrooms, served with broken rice &amp; chicken</p></div>
+                    <div class="product"><h3>Wok-fried Rice with Egg</h3><p>Plain, chicken or tofu</p></div>
+                    <div class="product"><h3>Homemade Pork Meatballs</h3><p>Served with steamed rice, raw veggies, prawn crackers &amp; peanut sauce</p></div>
+                    <div class="product"><h3>Baby Bun (for under 2s)</h3><p>Picking plate of plain round rice noodles, sliced chicken breast, cucumber, curry tomatoes &amp; more</p></div>
+                    <div class="product"><h3>Battered Chicken Nuggets</h3><p>Served with steamed rice, raw veggies, prawn crackers &amp; a sweet fish sauce</p></div>
+                    <div class="product"><h3>Vermicelli Noodles</h3><p>Round rice noodles (like spaghetti) with a wok-fried topping (chicken, pork or veggie spring rolls)</p></div>
+                    <div class="product"><h3>Desserts</h3><p>Ice cream or sorbet, banana fritter, choice of fruit</p></div>
+                    <div class="product"><h3>Drinks</h3><p>Freshly squeezed apple, orange and apple, mint &amp; lime juice or a choice of soft drinks</p></div>
+                </div>
+            </section>
+
+
+            <!-- FRESH JUICES -->
+            <section class="menu-section" id="fresh-juices">
+                <div class="title">
+                    <h2>Fresh Juices</h2>
+                </div>
+                <div class="products">
+                    <div class="product"><h3>Apple &amp; Orange</h3></div>
+                    <div class="product"><h3>Apple, Mint &amp; Lime</h3><p>With or without ginger</p></div>
+                    <div class="product"><h3>Beetroot, Carrot &amp; Apple</h3></div>
+                    <div class="product"><h3>Carrot, Apple &amp; Ginger</h3></div>
+                    <div class="product"><h3>Courgette, Spinach &amp; Apple</h3></div>
+                    <div class="product"><h3>Kale, Apple &amp; Pineapple</h3></div>
+                    <div class="product"><h3>Orange, Carrot &amp; Ginger</h3></div>
+                    <div class="product"><h3>Pineapple, Apple &amp; Mint</h3></div>
+                    <div class="product"><h3>Pineapple, Spinach &amp; Apple</h3></div>
+                    <div class="product"><h3>Spinach, Cucumber &amp; Pear</h3></div>
+                    <div class="product"><h3>Green Detox</h3></div>
+                    <div class="product"><h3>Coconut, Pineapple &amp; Apple</h3></div>
+                </div>
+            </section>
+
+
+            <!-- COCKTAILS -->
+            <section class="menu-section" id="cocktails">
+                <div class="title">
+                    <h2>Cocktails</h2>
+                </div>
+                <div class="products">
+                    <div class="product"><h3>Phojito</h3><p>Our signature cocktail; white rum, mint, lime &amp; soda</p></div>
+                    <div class="product"><h3>Pride Punch</h3><p>Sweet, fruity rum punch, with 50p from each sale going to akt</p></div>
+                    <div class="product"><h3>Spicy Lychee Margarita</h3><p>Tequila, fresh lime juice, lychee syrup &amp; Thai chillies</p></div>
+                    <div class="product"><h3>Dragon Fruit &amp; Lime Martini</h3><p>Hà Nội vodka, dragonfruit purée &amp; fresh lime juice</p></div>
+                    <div class="product"><h3>Cà phê Martini</h3><p>Hà Nội vodka, Vietnamese coffee, condensed milk</p></div>
+                    <div class="product"><h3>Tanqueray Gin &amp; Tonic</h3></div>
+                </div>
+            </section>
+
+
+            <!-- BEER & CIDER -->
+            <section class="menu-section" id="beer-cider">
+                <div class="title">
+                    <h2>Beer &amp; Cider</h2>
+                </div>
+                <div class="products">
+                    <div class="product"><h3>Saigon</h3></div>
+                    <div class="product"><h3>Beer Lao</h3></div>
+                    <div class="product"><h3>Bia Ha Noi</h3></div>
+                    <div class="product"><h3>Saigon Apple &amp; Ginger Cider</h3></div>
+                    <div class="product"><h3>Saigon Apple Cider</h3></div>
+                    <div class="product"><h3>Pho Brewgooder Session IPA</h3><p>Brewed just for us by Brewgooder</p></div>
+                    <div class="product"><h3>Pho Brewgooder Hazy Pale Ale</h3><p>Brewed just for us by Brewgooder</p></div>
+                    <div class="product"><h3>Daura Damm Gluten Free</h3></div>
+                </div>
+            </section>
+
+
+            <!-- WINES & SPARKLING -->
+            <section class="menu-section" id="wines-sparkling">
+                <div class="title">
+                    <h2>Wines &amp; Sparkling</h2>
+                </div>
+                <div class="products">
+                    <h3 class="group-title">White Wine</h3>
+                    <div class="product"><h3>Catarratto</h3><p>Sicily, Italy</p></div>
+                    <div class="product"><h3>Chardonnay</h3><p>Victoria, Australia</p></div>
+                    <div class="product"><h3>Pinot Grigio</h3><p>Piattini, Italy</p></div>
+                    <div class="product"><h3>Sauvignon Blanc</h3><p>Stellenbosch, South Africa</p></div>
+                    <div class="product"><h3>Selon Letang Viognier</h3><p>Languedoc, France</p></div>
+
+                    <h3 class="group-title">Red Wine</h3>
+                    <div class="product"><h3>Rame Garnacha</h3><p>Campo de Borja, Spain</p></div>
+                    <div class="product"><h3>Le Fou Pinot Noir</h3><p>Languedoc, France</p></div>
+                    <div class="product"><h3>Benjamin Malbec</h3><p>Mendozza, Argentina</p></div>
+
+                    <h3 class="group-title">Sparkling</h3>
+                    <div class="product"><h3>Prosecco Spumante</h3><p>Lunetta, Italy</p></div>
+                </div>
+            </section>
+
+
+            <!-- TEAS & COFFEES -->
+            <section class="menu-section" id="teas-coffees">
+                <div class="title">
+                    <h2>Teas</h2>
+                </div>
+                <div class="products">
+                    <div class="product"><h3>Flower teas</h3><p>Fragrant jasmine, green or yulan tea balls that bloom into beautiful flowers right before your eyes</p></div>
+                    <div class="product"><h3>Tea Pigs</h3><p>Green, chamomile or mint</p></div>
+                    <div class="product"><h3>Fresh lemongrass tea</h3></div>
+                    <div class="product"><h3>Fresh mint tea</h3></div>
+                    <div class="product"><h3>Green tea lemonade</h3></div>
+                    <div class="product"><h3>Iced tea</h3></div>
+                </div>
+
+                <div class="title sub-title">
+                    <h2>Vietnamese Coffees</h2>
+                </div>
+                <div class="products">
+                    <div class="product"><h3>Cà Phê</h3><p>Rich coffee from Caphe VN served black or with condensed milk</p></div>
+                    <div class="product"><h3>Cà Phê Sữa Đá</h3><p>Iced coffee with or without condensed milk</p></div>
+                </div>
+            </section>
+
+
+            <!-- SOFT DRINKS -->
+            <section class="menu-section" id="soft-drinks">
+                <div class="title">
+                    <h2>Soft Drinks</h2>
+                </div>
+                <div class="products">
+                    <div class="product"><h3>Spicy Lemonade</h3><p>With ginger &amp; fresh mint</p></div>
+                    <div class="product"><h3>Homemade Lemonade</h3></div>
+                    <div class="product"><h3>Green Tea Lemonade</h3></div>
+                    <div class="product"><h3>Dragon Fruit Lemonade</h3></div>
+                    <div class="product"><h3>Mineral Water</h3><p>Still or sparkling</p></div>
+                    <div class="product"><h3>Coconut Water</h3><p>Straight, over ice or with fresh pineapple juice</p></div>
+                    <div class="product"><h3>Soft Drinks</h3><p>Coca-Cola Original Taste, Coca-Cola Zero Sugar, Diet Coke, Sprite Zero Sugar and Fanta Orange</p></div>
+                </div>
+            </section>
+
+        </div>
+
+    </section>
+
+
+    <!-- SHARE MENU -->
+    <section class="share-menu">
+
+        <h2>Share Menu</h2>
+
+        <div class="share-icons">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://shaimaa-yasser26.github.io/sham/"
+                target="_blank" class="share-icon" aria-label="Share on Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="mailto:?subject=Check out our menu&body=https://shaimaa-yasser26.github.io/sham/"
+                class="share-icon" aria-label="Share via Email">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="https://wa.me/?text=https://shaimaa-yasser26.github.io/sham/"
+                target="_blank" class="share-icon" aria-label="Share on WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <section class="footer">
+
+        <div class="top-footer">
+
+            <div class="logo">
+                <img src="logo-footer.png" alt="logo-footer">
+                <h1>Pho</h1>
+            </div>
+
+            <div class="nav-footer">
+
+                <div class="about-us">
+                    <h6>About Us</h6>
+                    <ul>
+                        <li><a href="Locations.html">Locations</a></li>
+                        <li><a href="Our Story.html">Our Story</a></li>
+                        <li><a href="Franchise.html">Franchise</a></li>
+                        <li><a href="Careers.html">Careers</a></li>
+                        <li><a href="Contact Us.html">Contact Us</a></li>
+                        <li><a href="FAQs.html">FAQs</a></li>
+                    </ul>
+                </div>
+
+                <div class="our-menu">
+                    <h6>OUR MENU</h6>
+                    <ul>
+                        <li><a href="Our Menu.html">OUR MENU</a></li>
+                        <li><a href="Nutritional Info.html">Nutritional Info</a></li>
+                        <li><a href="Gluten Free.html">Gluten Free</a></li>
+                        <li><a href="Allergens.html">Allergens</a></li>
+                    </ul>
+                </div>
+
+                <div class="more-sham">
+                    <h6>MORE Pho</h6>
+                    <ul>
+                        <li><a href="sham To Go.html">PhoTo Go</a></li>
+                        <li><a href="Gift Vouchers.html">Gift Vouchers</a></li>
+                        <li><a href="Just sham Students.html">Just Pho Students</a></li>
+                        <li><a href="Gender Pay.html">Gender Pay</a></li>
+                        <li><a href="Reporting.html">Reporting</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="text-top-footer">
+
+                <h6>Newsletter Sign Up</h6>
+
+                <h2>Keep Up To Date With All Things Pho All Things</h2>
+
+                <a href="../sign in/sign.html">
+                    <h3 class="sign-up">Sign Up</h3>
+                </a>
+
+                <div class="icon-arrow">
+                    <a href="../sign in/sign.html">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="section5">
+
+        <div class="bottom-footer">
+
+            <div class="icons-footer">
+                <a href="https://www.facebook.com/PhoRestaurants" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/phorestaurants/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <i class="fa-brands fa-square-x-twitter"></i>
+                <i class="fa-brands fa-snapchat"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+
+            <div class="text-bottom-footer">
+                <ul>
+                    <li><a href="Terms & Conditions.html">Terms &amp; Conditions</a></li>
+                    <li><a href="Privacy.html">Privacy</a></li>
+                    <li><a href="Cookies Policy.html">Cookies Policy</a></li>
+                    <li><a href="©️Pho 2024 |creative by ignite.htm">©️Pho 2024 |creative by ignite</a></li>
+                </ul>
+            </div>
+
+            <div class="last-icon">
+                <a href="#top">
+                    <span>Top</span>
+                    <i class="fa fa-arrow-up"></i>
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="menu.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+{
+  "hero": {
+    "title": "越南 <br> 街头美食"
+  },
+  "nav": {
+    "menu": "菜单",
+    "reservations": "预订",
+    "locations": "门店位置",
+    "nutrition": "营养信息",
+    "giftVouchers": "礼品券",
+    "phoToGo": "Pho 外带",
+    "bookATable": "预订餐桌"
+  },
+  "menuSection": {
+    "title": "我们的菜单",
+    "text": "每家餐厅每天 <br> 都现做新鲜出品。",
+    "cta": "查看菜单"
+  },
+  "togo": {
+    "title": "Pho 外带",
+    "text": "支持外卖配送 <br> 或线上下单到店自取",
+    "cta": "立即订购"
+  },
+  "dish": {
+    "tagline": "人人都爱的 <br> Pho 美味",
+    "title": "营养信息",
+    "glutenFree": "无麸质",
+    "accredited": "经 Coeliac UK 认证"
+  },
+  "find": {
+    "title": "查找 Pho 门店",
+    "placeholder": "搜索产品",
+    "cta": "查看所有门店"
+  },
+  "hero2": {
+    "title": "粉红是拉差辣酱强势登场！",
+    "subtitle": "隆重推出……全球首款亮粉色是拉差辣酱！",
+    "cta": "了解更多"
+  },
+  "marquee": {
+    "fresh": "新鲜食材",
+    "noodles": "面条、米饭与啤酒",
+    "delicious": "简单美味"
+  },
+  "footer": {
+    "aboutUs": "关于我们",
+    "locations": "门店位置",
+    "ourStory": "我们的故事",
+    "franchise": "加盟合作",
+    "careers": "招聘信息",
+    "contactUs": "联系我们",
+    "faqs": "常见问题",
+    "ourMenuHeading": "我们的菜单",
+    "ourMenuLink": "我们的菜单",
+    "nutritionalInfo": "营养信息",
+    "glutenFree": "无麸质",
+    "allergens": "过敏原",
+    "moreHeading": "更多 PHO",
+    "phoToGo": "Pho 外带",
+    "giftVouchers": "礼品券",
+    "phoStudents": "学生专享",
+    "genderPay": "性别薪酬报告",
+    "reporting": "举报渠道"
+  },
+  "newsletter": {
+    "label": "订阅新闻简报",
+    "title": "随时掌握 Pho 的所有最新动态",
+    "cta": "立即订阅"
+  },
+  "legal": {
+    "terms": "条款与条件",
+    "privacy": "隐私政策",
+    "cookies": "Cookie 政策",
+    "copyright": "©Pho 2024 | 创意设计：ignite",
+    "top": "回到顶部"
+  }
+}

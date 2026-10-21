@@ -1,0 +1,1011 @@
+/* =========================================================
+   GLOBAL SETTINGS
+   ========================================================= */
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+
+}
+
+body {
+    background: hsl(0, 8%, 97%);
+}
+
+/* =========================================================
+   NAVIGATION BAR
+   ========================================================= */
+
+.header .nav {
+    position: fixed;
+
+    background: #0f0e0e;
+
+    width: 80%;
+    height: 15%;
+
+    border-radius: 15px;
+
+    top: 20px;
+    left: 155px;
+
+    z-index: 1000;
+}
+
+
+/* =========================================================
+   LOGO
+   ========================================================= */
+
+.header .logo {
+    position: fixed;
+
+    top: 20px;
+    left: 180px;
+
+    z-index: 1002;
+}
+
+.header .logo img {
+    position: relative;
+    top: 10px;
+    width: 40px;
+    height: auto;
+    font-size: 5%;
+    display: block;
+}
+
+.header .logo a {
+    text-decoration: none;
+}
+
+.header .logo h1 {
+    position: relative;
+    top: 18px;
+    left: -3px;
+    border: none;
+    outline: none;
+    color: #ece8d9;
+    font-size: 15px;
+}
+
+/* =========================================================
+   NAVIGATION LINKS
+   ========================================================= */
+
+.nav ul {
+    list-style: none;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+
+    position: relative;
+
+    top: 35px;
+    left: 40px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+
+    color: #ece8d9;
+
+    font-weight: 900;
+
+    position: relative;
+
+    display: block;
+
+    height: 25px;
+
+    padding: 0 4px;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   NAVIGATION TEXT ANIMATION
+   ========================================================= */
+
+.nav ul li a span {
+    position: relative;
+
+    display: block;
+
+    transition: transform 2s ease;
+}
+
+.nav ul li a span::after {
+    content: attr(data-text);
+
+    position: absolute;
+
+    left: 0;
+    top: 100%;
+
+    width: 100%;
+}
+
+
+/* =========================================================
+   NAVIGATION HOVER
+   ========================================================= */
+
+.nav ul li a:hover span {
+    transform: translateY(-100%);
+}
+
+
+/* =========================================================
+   NAVIGATION BUTTONS
+   ========================================================= */
+
+.nav-item {
+    display: flex;
+
+    gap: 10px;
+
+    position: relative;
+}
+
+.nav-item1 {
+    border: 2px solid #cb2d21;
+
+    border-radius: 50px;
+
+    padding: 8px 9px;
+}
+
+.nav-item2 {
+    background: #cb2d21;
+
+    border-radius: 50px;
+
+    padding: 10px 15px;
+
+    margin-left: 10px;
+}
+
+
+/* =========================================================
+   MENU ICON
+   FIXED ABOVE NAVBAR
+   ========================================================= */
+
+.header .icon {
+    position: fixed;
+
+    top: 65px;
+    right: 190px;
+
+    width: 70px;
+    height: 40px;
+
+    z-index: 1002;
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   MENU ICON - TWO LINES
+   ========================================================= */
+
+.header .icon span {
+    display: block;
+
+    width: 35px;
+    height: 3px;
+
+    background-color: #efede6;
+
+    margin: 8px 0;
+
+    transition: 0.3s;
+}
+
+
+/* =========================================================
+   MENU ICON - ACTIVE ANIMATION
+   ========================================================= */
+
+.icon.active span:first-child {
+    transform: translateY(5px) rotate(8deg);
+}
+
+.icon.active span:last-child {
+    transform: translateY(-5px) rotate(-8deg);
+}
+
+/* =========================================================
+/* =========================================================
+   HERO-IMG
+========================================================= */
+
+.section-hero {
+    position: relative;
+}
+
+.section-hero .container {
+    position: relative;
+}
+
+.section-hero .hero-img {
+    position: relative;
+}
+
+.hero-img img {
+    width: 100%;
+    height: 100vh;
+    display: block;
+   
+}
+
+.section-hero .hero-img::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+
+.title-hero {
+    position: absolute;
+    top: 300px;
+    left: 10%;
+    width: 40%;
+    color: #ece8d9;
+    font-weight: 800;
+        line-height: 1;
+
+}
+
+.title-hero strong {
+    display: block;
+    font-size: 55px;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+.title-hero p {
+    font-size: 18px;
+    line-height: 1.5;
+     white-space: nowrap;
+}
+
+a{
+ text-decoration: none;
+}
+.button-hero {
+    display: inline-block;
+   
+
+    padding: 20px 30px;
+
+    border: none;
+    border-radius: 30px;
+
+    cursor: pointer;
+
+    background-color: #cb2d21;
+
+    font-size: 30px;
+
+    color: #ece8d9;
+
+    font-weight: 700;
+}
+
+/* =========================================================
+SECTION-1
+   ========================================================= */
+.sec1 {
+    background-color: #cb2d21;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.sec1 .container {
+    display: block;
+    
+   
+}
+
+.sec1 h6 {
+    position: relative;
+    top: 80px;
+    left: -450px;
+    color: white;
+    font-size: 25px;
+    margin-bottom: 45px;
+}
+
+/* Search Box */
+.search-box {
+    width: 650px;
+    height: 60px;
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 25px;
+    box-sizing: border-box;
+    border-radius: 15px;
+
+      position: relative;
+    top: 80px;
+    left: 50px;
+}
+
+.search-box input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.search-box span {
+    width: 1px;
+    height: 30px;
+    background-color: #ccc;
+    margin: 0 20px;
+}
+
+.search-box button {
+    border: none;
+    background: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* View Menus */
+.viewmenue {
+    position: relative;
+    bottom: -20px;
+    left: 400px;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: #0b0100;
+    font-size: 18px;
+    color: #ece8d9;
+    font-weight: 600;
+}
+
+/* =========================================================
+   LOCATIONS
+========================================================= */
+
+.locations {
+    background-color: #ece8d9;
+    padding: 80px 0;
+}
+
+.locations .container {
+    width: 85%;
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px 35px;
+}
+
+
+/* =========================================================
+   PLACE
+========================================================= */
+
+.places {
+    background-color: #ece8d9;
+
+    border-radius: 20px;
+    overflow: hidden;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s ease;
+
+    /* مهم */
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.places:hover {
+    transform: translateY(-5px);
+}
+
+
+/* =========================================================
+   PLACE IMAGE
+========================================================= */
+
+.places > img {
+    width: 100%;
+    height: 280px;
+
+    object-fit: cover;
+    display: block;
+}
+
+
+/* =========================================================
+   PLACE INFO
+========================================================= */
+
+.place-info {
+    padding: 28px 30px 10px;
+
+    /* يخلي المساحة تتمدد */
+    flex: 1;
+}
+
+.place-info h3 {
+    font-size: 32px;
+    font-weight: 700;
+
+    margin: 0 0 18px;
+
+    color: #0f0e0e;
+}
+
+
+/* =========================================================
+   ADDRESS
+========================================================= */
+
+.address {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+
+    line-height: 1.5;
+}
+
+.address i {
+    color: #cb2d21;
+
+    font-size: 18px;
+
+    margin-top: 3px;
+}
+
+.address a {
+    color: #333;
+    text-decoration: none;
+
+    font-size: 16px;
+
+    transition: 0.3s ease;
+}
+
+.address a:hover {
+    color: #cb2d21;
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.place-buttons {
+    display: flex;
+    gap: 15px;
+
+    padding: 20px 30px 30px;
+
+    /* يخلي الزرارين دايمًا تحت */
+    margin-top: auto;
+}
+
+.place-buttons button {
+    flex: 1;
+
+    height: 50px;
+
+    border: 2px solid #cb2d21;
+    border-radius: 30px;
+
+    background-color: #cb2d21;
+    color: white;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+
+/* =========================================================
+   HOVER
+========================================================= */
+
+.place-buttons button:hover {
+    background-color: #0f0e0e;
+    border-color: #0f0e0e;
+
+    color: #ece8d9;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.footer {
+    background-color: #0f0e0e;
+    width: 100%;
+    min-height: 30vh;
+
+    color: #ece8d9;
+
+    padding: 80px 6% 60px;
+}
+
+
+/* =========================================================
+   TOP FOOTER
+   ========================================================= */
+
+.footer .top-footer {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    gap: 50px;
+}
+
+
+/* =========================================================
+   LOGO
+   ========================================================= */
+
+.footer .logo {
+    width: 15%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer .logo img {
+    width: 110px;
+    height: auto;
+}
+
+.footer .logo h1 {
+    margin-top: 10px;
+
+    font-size: 30px;
+    font-weight: 900;
+
+    letter-spacing: 2px;
+    color: #ece8d9;
+}
+
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+
+.footer .nav-footer {
+    width: 40%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    gap: 40px;
+}
+
+
+/* =========================================================
+   NAVIGATION LISTS
+   ========================================================= */
+
+.footer .nav-footer ul {
+    list-style: none;
+
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 14px;
+}
+
+
+/* HEADINGS */
+
+.footer .nav-footer ul h6 {
+    margin-bottom: 12px;
+
+    color: #ece8d9;
+
+    font-size: 14px;
+    font-weight: 800;
+
+    text-transform: uppercase;
+}
+
+
+/* LINKS */
+
+.footer .nav-footer ul li a {
+    color: #ece8d9;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    transition: 0.3s ease;
+}
+
+
+/* HOVER */
+
+.footer .nav-footer ul li a:hover {
+    color: #cb2d21;
+}
+
+
+/* =========================================================
+   NEWSLETTER
+   ========================================================= */
+
+.footer .text-top-footer {
+    width: 25%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer .text-top-footer h6 {
+    margin-bottom: 15px;
+
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.footer .text-top-footer h2 {
+    max-width: 350px;
+
+    font-size: 32px;
+    font-weight: 900;
+
+    line-height: 1.1;
+}
+
+
+.sign-link {
+    text-decoration: none;
+}
+
+.sign-up {
+    display: inline-block;
+    color: #cb2d21;
+}
+
+.icon-arrow {
+    position: relative;
+    top: -43px;
+    left: 190px;
+
+    font-size: 30px;
+
+
+
+
+    border: 1px solid black;
+    border-radius: 50%;
+
+    cursor: pointer;
+
+}
+
+
+.icon-arrow:hover {
+    background-color: #cb2d21;
+    border-color: #cb2d21;
+}
+
+.icon-arrow:hover i {
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+
+
+.footer .text-top-footer h3 {
+
+    margin-top: 25px;
+
+    font-size: 40px;
+    font-weight: 800;
+
+    cursor: pointer;
+
+}
+
+.footer .text-top-footer a {
+    text-decoration: none;
+    color: #cb2d21;
+
+}
+
+/* =========================================================
+   ARROW
+   ========================================================= */
+
+.footer .icon-arrow {
+    width: 55px;
+    height: 55px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid #ece8d9;
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.footer .icon-arrow i {
+    font-size: 20px;
+
+    transition: 0.3s ease;
+}
+
+.footer .icon-arrow:hover {
+
+    border-color: #cb2d21;
+}
+
+.footer .icon-arrow:hover i {
+    transform: translateX(5px);
+}
+
+/* =========================================================
+   SECTION 5
+   ========================================================= */
+
+.section5 {
+    position: relative;
+}
+
+.section5::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 100' preserveAspectRatio='none'%3E%3Cpath d='M0,50 C150,0 350,100 600,50 C850,0 1050,100 1200,50' stroke='%23e8393f' stroke-width='2' fill='none'/%3E%3C/svg%3E");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    pointer-events: none;
+}
+
+/* =========================================================
+   SECTION 5 before line
+   ========================================================= */
+.section5 {
+    background-color: #0f0e0e;
+
+    width: 100%;
+    min-height: 25vh;
+
+    color: #ece8d9;
+
+    padding: 30px 6% 40px;
+}
+
+
+/* =========================================================
+   BOTTOM FOOTER
+   ========================================================= */
+
+.section5 .bottom-footer {
+    width: 100%;
+
+    padding-top: 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+/* =========================================================
+   SOCIAL ICONS
+   ========================================================= */
+
+.section5 .icons-footer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+
+.section5 .icons-footer a {
+    text-decoration: none;
+}
+
+.section5 .icons-footer i {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    z-index: 1;
+
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 18px;
+
+    color: #ece8d9;
+
+    border: 1px solid #cb2d21;
+    border-radius: 50%;
+
+    cursor: pointer;
+    text-decoration: none;
+
+    transition: color 0.4s ease;
+}
+
+
+
+/* =========================================================
+   WHITE BACKGROUND
+   ========================================================= */
+
+.section5 .icons-footer i::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 0%;
+
+    background-color: #fff;
+
+    border-radius: 50%;
+
+    z-index: -1;
+
+    transition: height 1s ease;
+}
+
+.section5 .icons-footer i:hover::after {
+    height: 100%;
+}
+
+/* =========================================================
+   HOVER - WHITE FILLS FROM BOTTOM
+   ========================================================= */
+
+.section5 .icons-footer i:hover::before {
+    height: 100%;
+}
+
+
+/* =========================================================
+   HOVER - ICON STAYS RED
+   ========================================================= */
+
+.section5 .icons-footer i:hover {
+    color: #cb2d21;
+}
+
+
+/* =========================================================
+   BOTTOM LINKS
+   ========================================================= */
+
+.section5 .text-bottom-footer ul {
+    list-style: none;
+
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+
+    gap: 25px;
+}
+
+.section5 .text-bottom-footer ul li a {
+    color: #ece8d9;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    transition: 0.3s ease;
+}
+
+.section5 .text-bottom-footer ul li a:hover {
+    color: #cb2d21;
+}
+
+
+/* =========================================================
+   LAST ICON - ARROW UP
+   ========================================================= */
+
+.section5 .last-icon {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #ece8d9;
+    border-radius: 50%;
+
+    cursor: pointer;
+    background: #cb2d21;
+
+    transition: 0.4s ease;
+}
+
+.section5 .last-icon i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 16px;
+    font-weight: 300px;
+    color: black;
+
+    transition: 0.4s ease;
+}
+
+.section5 .last-icon a {
+    text-decoration: none;
+    color: black;
+}
+
+/* HOVER */
+.section5 .last-icon:hover {
+    transform: scale(1.12);
+}

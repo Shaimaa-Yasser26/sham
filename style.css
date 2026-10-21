@@ -1,0 +1,2053 @@
+ /* =========================================================
+   GLOBAL SETTINGS
+   ========================================================= */
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+
+}
+
+body {
+    background: hsl(0, 8%, 97%);
+    
+}
+
+html {
+    overflow-x: hidden;
+} 
+
+/* =========================================================
+   MAIN SECTION
+   ========================================================= */
+
+.section {
+    background: #cb2d21;
+    width: 100%;
+    height: 160vh;
+}
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.section .header {
+    position: relative;
+
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* =========================================================
+   HERO IMAGE
+   ========================================================= */
+.header .hero-img {
+    position: absolute;
+    top: 50px;
+    left: 70px;
+    width: calc(100% - 140px);  /* 70px يمين + 70px شمال */
+    height: 100%;
+    overflow: hidden;
+}
+.header .hero-img img {
+    position: absolute;
+
+    width: 90%;
+    height: 90%;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+}
+
+.header .hero-img {
+    position: absolute;
+    top: 50px;
+    left: 70px;
+
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+}
+
+/* Gradient */
+.header .hero-img::after {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 90%;
+    height: 90%;
+
+    border-radius: 15px;
+
+    background: linear-gradient(to left bottom,
+            transparent 40%,
+            rgba(0, 0, 0, 0.8) 100%);
+}
+
+/* =========================================================
+   HERO TITLE
+   ========================================================= */
+strong {
+    position: absolute;
+
+    color: #ece8d9;
+
+    font-size: 80px;
+    font-weight: 900;
+
+    letter-spacing: normal;
+
+    top: 310px;
+    left: 20px;
+
+    opacity: 0;
+
+    animation: showText 1s ease forwards;
+    animation-delay: 1s;
+}
+
+@keyframes showText {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.reveal {
+    opacity: 0;
+
+    transform: translateY(40px);
+
+    transition:
+        opacity 0.6s ease,
+        transform 0.6s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+/* =========================================================
+   NAVIGATION BAR
+   ========================================================= */
+
+.header .nav {
+    position: fixed;
+
+    background: #0f0e0e;
+
+    width: 80%;
+    height: 15%;
+
+    border-radius: 15px;
+
+    top: 20px;
+    left: 155px;
+
+    z-index: 1000;
+}
+
+
+/* =========================================================
+   LOGO
+   ========================================================= */
+
+.header .logo {
+    position: fixed;
+
+    top: 20px;
+    left: 180px;
+
+    z-index: 1002;
+}
+
+.header .logo img {
+    position: relative;
+    top: 10px;
+    width: 40px;
+    height: auto;
+    font-size: 5%;
+    display: block;
+}
+
+.header .logo a {
+    text-decoration: none;
+}
+
+.header .logo h1 {
+    position:relative;
+    top: 18px; 
+    left: -3px;
+    border: none;
+    outline: none;
+    color: #ece8d9;
+    font-size: 15px;
+}
+
+/* =========================================================
+   NAVIGATION LINKS
+   ========================================================= */
+
+.nav ul {
+    list-style: none;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+
+    position: relative;
+
+    top: 35px;
+    left: -50px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+
+    color: #ece8d9;
+
+    font-weight: 900;
+
+    position: relative;
+
+  
+
+    display: block;
+
+    height: 25px;
+
+    padding: 0 4px;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   NAVIGATION TEXT ANIMATION
+   ========================================================= */
+
+.nav ul li a span {
+    position: relative;
+
+    display: block;
+
+    transition: transform 2s ease;
+}
+
+.nav ul li a span::after {
+    content: attr(data-text);
+
+    position: absolute;
+
+    left: 0;
+    top: 100%;
+
+    width: 100%;
+}
+
+
+/* =========================================================
+   NAVIGATION HOVER
+   ========================================================= */
+
+.nav ul li a:hover span {
+    transform: translateY(-100%);
+}
+
+
+/* =========================================================
+   NAVIGATION BUTTONS
+   ========================================================= */
+
+.nav-item {
+    display: flex;
+
+    gap: 10px;
+
+    position: relative;
+}
+
+.nav-item1 {
+    border: 2px solid #cb2d21;
+
+    border-radius: 50px;
+
+    padding: 8px 9px;
+}
+
+.nav-item2 {
+    background: #cb2d21;
+
+    border-radius: 50px;
+
+    padding: 10px 15px;
+
+    margin-left: 10px;
+}
+/* ============================================================
+   i18n.css (v2) — خطوط اللغات + إصلاحات الـ RTL
+   اربطيه في الـ <head> بعد style.css
+   وامسحي النسخة القديمة اللي كانت متلصقة جوه style.css
+   ============================================================ */
+
+/* ---------- 1) الخطوط ---------- */
+/* الأيقونات <i> مستثناة عشان Font Awesome ما يبوظش */
+html[lang="ar"] body,
+html[lang="ar"] body *:not(i) {
+  font-family: 'Cairo', sans-serif;
+}
+
+html[lang="zh"] body,
+html[lang="zh"] body *:not(i) {
+  font-family: 'Noto Sans SC', sans-serif;
+}
+
+/* اسم البراند "Pho" يفضل بخطه في كل اللغات */
+html[lang] .logo h1 {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* العربي والصيني ما بيتحملوش letter-spacing */
+html[lang="ar"] *,
+html[lang="zh"] * {
+  letter-spacing: 0 !important;
+}
+
+/* ...إلا لوجو البراند */
+html[lang] .footer .logo h1 {
+  letter-spacing: 2px !important;
+}
+
+/* ---------- 2) النافبار ---------- */
+/* ارتفاع اللينك ثابت 25px، فنثبّت line-height عشان الخط العربي والصيني
+   ما يتقصّش وتأثير الـ hover (data-text) يشتغل صح */
+html[lang="ar"] .nav ul li a,
+html[lang="zh"] .nav ul li a {
+  line-height: 25px;
+}
+
+/* ---------- 3) الشريط المتحرك ---------- */
+/* لازم يفضل LTR، لأن الأنيميشن translateX(-50%) في RTL بيسيب الشريط فاضي */
+.moving-text {
+  direction: ltr;
+}
+
+/* ---------- 4) زرار "Top" ---------- */
+/* الدايرة 45px، والنص العربي/الصيني أطول من إنه يتحط فيها */
+html[lang="ar"] .section5 .last-icon span,
+html[lang="zh"] .section5 .last-icon span {
+  display: none;
+}
+
+/* ---------- 5) إصلاحات الـ RTL (العربي) ---------- */
+html[dir="rtl"] .nav-item2 {
+  margin-left: 0;
+  margin-inline-start: 10px;
+}
+
+/* الخط الفاصل بين خانة البحث والزرار */
+html[dir="rtl"] .search-form button::before {
+  left: auto;
+  right: 0;
+}
+
+/* زرار Learn More يتحط جنب العنوان */
+html[dir="rtl"] .section4 .btn-hero2 {
+  left: auto;
+  right: 10%;
+}
+
+/* سهم النشرة البريدية في الفوتر */
+html[dir="rtl"] .icon-arrow {
+  left: auto;
+  right: 190px;
+}
+
+html[dir="rtl"] .icon-arrow i {
+  transform: scaleX(-1);
+}
+
+html[dir="rtl"] .footer .icon-arrow:hover i {
+  transform: scaleX(-1) translateX(5px);
+}
+
+/* ---------- 6) زرار اللغة (تصميم pill زي أزرار النافبار) ---------- */
+/* مكانه: طرف النافبار اليمين */
+.nav .language-selector {
+  position: absolute;
+  top: 50%;
+  right: 14px;
+  transform: translateY(-50%);
+  z-index: 1001;
+}
+
+.nav #language-select {
+  /* نشيل شكل المتصفح الافتراضي */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  min-width: 0;
+  height: 38px;
+  /* مساحة للكرة الأرضية (شمال) والسهم (يمين) */
+  padding: 0 26px 0 30px;
+
+  border: 1px solid rgba(236, 232, 217, 0.28);
+  border-radius: 50px;
+  background-color: rgba(236, 232, 217, 0.06);
+
+  /* كرة أرضية + سهم */
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ece8d9' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='9'/%3E%3Cpath d='M3 12h18'/%3E%3Cpath d='M12 3c2.5 2.5 3.8 5.5 3.8 9s-1.3 6.5-3.8 9c-2.5-2.5-3.8-5.5-3.8-9S9.5 5.5 12 3z'/%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ece8d9' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: left 10px center, right 9px center;
+  background-size: 15px 15px, 10px 10px;
+
+  color: #ece8d9;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1;
+  cursor: pointer;
+  outline: none;
+
+  transition: border-color 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.nav #language-select:hover {
+  border-color: #cb2d21;
+  background-color: rgba(203, 45, 33, 0.14);
+}
+
+.nav #language-select:focus-visible {
+  border-color: #cb2d21;
+  box-shadow: 0 0 0 3px rgba(203, 45, 33, 0.35);
+}
+
+/* القائمة المنسدلة نفسها (بتشتغل في Edge وChrome) */
+.nav #language-select option {
+  background: #0f0e0e;
+  color: #ece8d9;
+  font-size: 14px;
+}
+
+/* العربي: الكرة الأرضية يمين والسهم شمال */
+html[dir="rtl"] .nav #language-select {
+  padding: 0 30px 0 26px;
+  background-position: right 10px center, left 9px center;
+}
+
+/* الهامبرجر متثبت بالنسبة لحرف النافبار اليمين (مش بمسافة ثابتة من الشاشة)
+   عشان ما يلمسش زرار اللغة على أي حجم شاشة */
+.header .icon {
+  right: calc(20% - 155px + 140px);
+}
+
+/* ---------- 7) صورة الهيرو ---------- */
+/* الصورة position:absolute من غير left، فكانت بتروح لليمين في RTL
+   والجرادينت بيفضل على الشمال وبيطلع شريط غامق فاضي */
+.header .hero-img img {
+  top: 0;
+  left: 0;
+}
+
+/* ---------- 8) عنوان الهيرو فوق الجرادينت ---------- */
+/* كان تحت الطبقة الغامقة فبيظهر باهت */
+.header .hero-img strong {
+  z-index: 2;
+}
+
+/* ---------- 9) قسم الطبق (Nutrition Info) في الصيني ---------- */
+/* حافة النص الشمال تبقى على نفس خط حافة النافبار الشمال.
+   النافبار left:155px، والنص بيبدأ من 5% من عرض الشاشة (الكونتينر 90% في النص)
+   وده يساوي 5.5556% من عرض الكونتينر نفسه، فنطرحه من 155px */
+html[lang="zh"] .dish .part1 {
+  left: calc(155px - 5.5556% + 40px); /* غيّري الـ 40px لو عايزة أكتر أو أقل */
+}
+
+/* الـ flex كان بيضغط العمود فالصيني بيتكسر لحرف لوحده ("味").
+   keep-all بيمنع الكسر بين الحروف إلا عند المسافات */
+html[lang="zh"] .dish .part1 strong {
+  word-break: keep-all;
+}
+
+/* =========================================================
+   MENU ICON
+   FIXED ABOVE NAVBAR
+   ========================================================= */
+
+.header .icon {
+    position: fixed;
+
+    top: 65px;
+    right: 270px;
+
+    width: 70px;
+    height: 40px;
+
+    z-index: 1002;
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   MENU ICON - TWO LINES
+   ========================================================= */
+
+.header .icon span {
+    display: block;
+
+    width: 35px;
+    height: 3px;
+
+    background-color: #efede6;
+
+    margin: 8px 0;
+
+    transition: 0.3s;
+}
+
+
+/* =========================================================
+   MENU ICON - ACTIVE ANIMATION
+   ========================================================= */
+
+.icon.active span:first-child {
+    transform: translateY(5px) rotate(8deg);
+}
+
+.icon.active span:last-child {
+    transform: translateY(-5px) rotate(-8deg);
+}
+
+
+/* =========================================================
+   SECTION 1 & SECTION 2
+   ========================================================= */
+
+.container {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+}
+
+
+/* =========================================================
+   SECTION BOXES
+   ========================================================= */
+
+.section1,
+.section2 {
+    background: #da453d;
+
+    border-radius: 15px;
+
+    padding: 60px;
+
+    margin: 50px;
+
+    font-size: 20px;
+
+    width: 500px;
+    height: 300px;
+
+    color: #ece8d9;
+}
+
+
+/* =========================================================
+   TEXT INSIDE BOX
+   ========================================================= */
+
+.hero-text {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 25px;
+}
+
+h2 {
+    display: flex;
+
+    justify-content: center;
+}
+
+p {
+    display: flex;
+
+    justify-content: center;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h4 {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    background: #1d1c1c;
+
+    border-radius: 15px;
+
+    padding: 10px;
+
+    margin: auto;
+
+    width: 150px;
+}
+
+/* =========================================================
+   REVEAL ANIMATION
+   ========================================================= */
+
+.reveal {
+    opacity: 0;
+
+    transform: translateY(40px);
+
+    transition:
+        opacity 0.6s ease,
+        transform 0.6s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   DISH SECTION
+   ========================================================= */
+
+.dish {
+    width: 100%;
+background-color: #f7f7f7;
+    padding: 100px 0;
+}
+
+.dish .container {
+    width: 90%;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 50px;
+}
+
+
+/* =========================================================
+   DISH - PART 1
+   ========================================================= */
+
+.dish .part1 {
+    width: 40%;
+    position: relative;
+    top: -50px;
+
+    opacity: 0;
+
+    animation: showText 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.dish .part1 strong {
+    position: static;
+    top: -40px;
+
+    color: #1d1c1c;
+
+    font-size: 60px;
+    font-weight: 900;
+    letter-spacing: normal;
+}
+
+.dish .part1 h1 {
+    display: inline-block;
+
+    background: #cb2d21;
+
+    color: #ece8d9;
+
+    border-radius: 50px;
+
+    padding: 10px 20px;
+
+    margin: 15px 0 0;
+
+    font-size: 40px;
+
+    position: relative;
+
+    top: 10px;
+}
+
+
+/* =========================================================
+   DISH IMAGE
+   ========================================================= */
+
+.img-dish {
+    width: 100%;
+}
+
+.img-dish img {
+    width: 100%;
+    height: auto;
+
+    display: block;
+
+    position: relative;
+}
+
+
+/* =========================================================
+   DISH - PART 2
+   ========================================================= */
+
+.dish .part2 {
+    width: 80%;
+    position: relative;
+    top: -50px;
+
+    transform: rotate(-5deg);
+}
+
+.dish .part2 h3 {
+    font-size: 50px;
+    font-weight: 900;
+    color: #1d1c1c;
+}
+
+.dish .part2 h6 {
+    font-size: 20px;
+
+    color: #1d1c1c;
+
+    margin-top: 10px;
+}
+
+/* =========================================================
+   SECTION 3 - FIND A SHAM
+   ========================================================= */
+
+.section3 {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 340px;
+
+    top: -90px;
+
+    background-color: #0f0e0e;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   CONTAINER
+   ========================================================= */
+
+.section3 .container {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* =========================================================
+   TEXT
+   ========================================================= */
+
+.section3 .text h2 {
+    position: relative;
+
+    left: -50%;
+
+    margin: 0;
+
+    color: #ece8d9;
+
+    font-size: 70px;
+    font-weight: 900;
+
+    line-height: 0.8;
+}
+
+
+/* =========================================================
+   SEARCH INPUT
+   ========================================================= */
+
+.section3 .input {
+    position: absolute;
+
+    width: 750px;
+
+    left: 150px;
+    top: 20px;
+
+    margin-top: 15px;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+
+    width: 40%;
+    height: 60px;
+
+    background-color: #ece8d9;
+
+    border-radius: 50px;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   INPUT
+   ========================================================= */
+
+.search-form input {
+    flex: 1;
+
+    width: 100%;
+    height: 60px;
+
+    padding: 0 25px;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    font-size: 16px;
+}
+
+
+/* =========================================================
+   SEARCH BUTTON
+   ========================================================= */
+
+.search-form button {
+    position: relative;
+
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+
+    background: transparent;
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   VERTICAL LINE
+   ========================================================= */
+
+.search-form button::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 15px;
+    bottom: 15px;
+
+    width: 1px;
+
+    background-color: #cb2d21;
+}
+
+
+/* =========================================================
+   VIEW ALL LOCATIONS
+   ========================================================= */
+
+.section3 .button {
+    position: absolute;
+
+    right: 10%;
+    top: 185px;
+
+    width: 200px;
+    height: 60px;
+
+    border: none;
+    border-radius: 50px;
+
+    background-color: #cb2d21;
+
+    color: #fff;
+
+    font-size: 18px;
+
+    cursor: pointer;
+}
+/* =========================================================
+   HERO2 - SECTION 4
+   ========================================================= */
+
+.section4 {
+    background: #cb2d21;
+    position: relative;
+    top: -90px;
+    width: 100%;
+    height: 100vh;
+}
+
+.section4 .container {
+    width: 100%;
+    margin: auto;
+}
+
+
+/* =========================================================
+   HERO IMAGE
+   ========================================================= */
+
+.section4 .hero-img {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+    transform: scale(1);
+    transition: transform 0.5s ease;
+}
+
+.section4 .hero-img.scrolling {
+    transform: scale(0.9);
+}
+
+
+/* IMAGE */
+
+.section4 .hero-img img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* =========================================================
+   DARK OVERLAY
+   ========================================================= */
+
+.section4 .hero-img::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+
+/* =========================================================
+   TITLE
+   ========================================================= */
+
+.section4 .hero-img h1 {
+    position: absolute;
+    z-index: 2;
+
+    top: 35%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 90%;
+
+    color: #ece8d9;
+
+    font-size: 55px;
+    font-weight: 900;
+
+    text-align: start;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
+
+.section4 .hero-img h6 {
+    position: absolute;
+    z-index: 2;
+
+    top: 52%;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 90%;
+
+    color: #ece8d9;
+
+    font-size: 20px;
+    font-weight: 500;
+
+    text-align: start;
+}
+
+
+/* =========================================================
+   BUTTON
+   ========================================================= */
+
+/* =========================================================
+   HERO2 - SECTION 4
+   ========================================================= */
+
+.section4 {
+    background: #cb2d21;
+    position: relative;
+    top: -89.76px;
+    width: 100%;
+    height: 130vh;
+    margin: 0;
+    padding: 0;
+}
+
+.section4 .container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* =========================================================
+   HERO IMAGE
+   ========================================================= */
+
+.section4 .hero-img {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+    transform: scale(1);
+    transition: transform 0.5s ease;
+}
+
+.section4 .hero-img.scrolling {
+    transform: scale(0.9);
+}
+
+.section4 .hero-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* =========================================================
+   DARK OVERLAY
+   ========================================================= */
+
+.section4 .hero-img::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+
+/* =========================================================
+   TITLE
+   ========================================================= */
+
+.section4 .hero-img h1 {
+    position: absolute;
+    z-index: 2;
+
+    top: 35%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 90%;
+
+    color: #ece8d9;
+
+    font-size: 55px;
+    font-weight: 900;
+
+    text-align: start;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
+
+.section4 .hero-img h6 {
+    position: absolute;
+    z-index: 2;
+
+    top: 52%;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 90%;
+
+    color: #ece8d9;
+
+    font-size: 20px;
+    font-weight: 500;
+
+    text-align: start;
+}
+
+
+/* =========================================================
+   BUTTON
+   ========================================================= */
+
+.section4 .btn-hero2 {
+    position: absolute;
+    z-index: 2;
+
+    top: 65%;
+    left: 10%;
+
+    display: flex;
+    align-items: start;
+
+    border: none;
+    border-radius: 50px;
+
+    background: #cb2d21;
+    color: #ece8d9;
+
+    padding: 12px 30px;
+
+    font-size: 18px;
+    font-weight: 900;
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   MOVING TEXT
+   ========================================================= */
+
+.moving {
+    margin: 0;
+    padding: 0;
+    background: #cb2d21;
+}
+
+.moving-text {
+    width: 100%;
+    height: 320px;
+
+    margin: 0;
+    padding: 0;
+
+    background: #cb2d21;
+
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+}
+
+
+/* =========================================================
+   TEXT TRACK
+   ========================================================= */
+
+.moving-text-track {
+    display: flex;
+    align-items: center;
+
+    gap: 100px;
+
+    width: max-content;
+
+    animation: movingText 18s linear infinite;
+}
+
+
+/* =========================================================
+   TEXT
+   ========================================================= */
+
+.moving-text-track span {
+    color: #ece8d9;
+
+    font-size: 70px;
+    font-weight: 900;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   ANIMATION
+   ========================================================= */
+
+@keyframes movingText {
+
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.footer {
+    background-color: #0f0e0e;
+    width: 100%;
+    min-height: 30vh;
+
+    color: #ece8d9;
+
+    padding: 80px 6% 60px;
+}
+
+
+/* =========================================================
+   TOP FOOTER
+   ========================================================= */
+
+.footer .top-footer {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    gap: 50px;
+}
+
+
+/* =========================================================
+   LOGO
+   ========================================================= */
+
+.footer .logo {
+    width: 15%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer .logo img {
+    width: 110px;
+    height: auto;
+}
+
+.footer .logo h1 {
+    margin-top: 10px;
+
+    font-size: 30px;
+    font-weight: 900;
+
+    letter-spacing: 2px;
+    color: #ece8d9;
+}
+
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+
+.footer .nav-footer {
+    width: 40%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    gap: 40px;
+}
+
+
+/* =========================================================
+   NAVIGATION LISTS
+   ========================================================= */
+
+.footer .nav-footer ul {
+    list-style: none;
+
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 14px;
+}
+
+
+/* HEADINGS */
+
+.footer .nav-footer ul h6 {
+    margin-bottom: 12px;
+
+    color: #ece8d9;
+
+    font-size: 14px;
+    font-weight: 800;
+
+    text-transform: uppercase;
+}
+
+
+/* LINKS */
+
+.footer .nav-footer ul li a {
+    color: #ece8d9;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    transition: 0.3s ease;
+}
+
+
+/* HOVER */
+
+.footer .nav-footer ul li a:hover {
+    color: #cb2d21;
+}
+
+
+/* =========================================================
+   NEWSLETTER
+   ========================================================= */
+
+.footer .text-top-footer {
+    width: 25%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer .text-top-footer h6 {
+    margin-bottom: 15px;
+
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.footer .text-top-footer h2 {
+    max-width: 350px;
+
+    font-size: 32px;
+    font-weight: 900;
+
+    line-height: 1.1;
+}
+
+
+.sign-link {
+    text-decoration: none;
+}
+
+.sign-up {
+    display: inline-block;
+    color: #cb2d21;
+}
+.icon-arrow {
+    position: relative;
+    top: -43px;
+    left: 190px;
+
+    font-size: 30px;
+
+  
+  
+
+    border: 1px solid black;
+    border-radius: 50%;
+
+    cursor: pointer;
+
+}
+
+
+ .icon-arrow:hover {
+    background-color: #cb2d21;
+    border-color: #cb2d21;
+}
+
+.icon-arrow:hover i {
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+
+
+.footer .text-top-footer h3 {
+    
+    margin-top: 25px;
+
+    font-size: 40px;
+    font-weight: 800;
+
+    cursor: pointer;
+   
+}
+
+.footer .text-top-footer a{
+   text-decoration: none;
+   color: #cb2d21;
+
+}
+
+/* =========================================================
+   ARROW
+   ========================================================= */
+
+.footer .icon-arrow {
+    width: 55px;
+    height: 55px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid #ece8d9;
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.footer .icon-arrow i {
+    font-size: 20px;
+
+    transition: 0.3s ease;
+}
+
+.footer .icon-arrow:hover {
+
+    border-color: #cb2d21;
+}
+
+.footer .icon-arrow:hover i {
+    transform: translateX(5px);
+}
+/* =========================================================
+   SECTION 5
+   ========================================================= */
+
+.section5 {
+  position: relative;
+}
+
+.section5::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 100' preserveAspectRatio='none'%3E%3Cpath d='M0,50 C150,0 350,100 600,50 C850,0 1050,100 1200,50' stroke='%23e8393f' stroke-width='2' fill='none'/%3E%3C/svg%3E");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
+
+/* =========================================================
+   SECTION 5 before line
+   ========================================================= */
+.section5 {
+    background-color: #0f0e0e;
+
+    width: 100%;
+    min-height: 25vh;
+
+    color: #ece8d9;
+
+    padding: 30px 6% 40px;
+}
+
+
+/* =========================================================
+   BOTTOM FOOTER
+   ========================================================= */
+
+.section5 .bottom-footer {
+    width: 100%;
+
+    padding-top: 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+/* =========================================================
+   SOCIAL ICONS
+   ========================================================= */
+
+.section5 .icons-footer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+
+.section5 .icons-footer  a {
+    text-decoration: none;
+}
+
+.section5 .icons-footer i {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    z-index: 1;
+
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 18px;
+
+    color: #ece8d9;
+
+    border: 1px solid #cb2d21;
+    border-radius: 50%;
+
+    cursor: pointer;
+     text-decoration: none;
+
+    transition: color 0.4s ease;
+}
+
+
+
+/* =========================================================
+   WHITE BACKGROUND
+   ========================================================= */
+
+.section5 .icons-footer i::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 0%;
+
+    background-color: #fff;
+
+    border-radius: 50%;
+
+    z-index: -1;
+
+    transition: height 1s ease;
+}
+
+.section5 .icons-footer i:hover::after {
+    height: 100%;
+}
+
+/* =========================================================
+   HOVER - WHITE FILLS FROM BOTTOM
+   ========================================================= */
+
+.section5 .icons-footer i:hover::before {
+    height: 100%;
+}
+
+
+/* =========================================================
+   HOVER - ICON STAYS RED
+   ========================================================= */
+
+.section5 .icons-footer i:hover {
+    color: #cb2d21;
+}
+
+
+/* =========================================================
+   BOTTOM LINKS
+   ========================================================= */
+
+.section5 .text-bottom-footer ul {
+    list-style: none;
+
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+
+    gap: 25px;
+}
+
+.section5 .text-bottom-footer ul li a {
+    color: #ece8d9;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    transition: 0.3s ease;
+}
+
+.section5 .text-bottom-footer ul li a:hover {
+    color: #cb2d21;
+}
+
+
+/* =========================================================
+   LAST ICON - ARROW UP
+   ========================================================= */
+
+.section5 .last-icon {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #ece8d9;
+    border-radius: 50%;
+
+    cursor: pointer;
+    background: #cb2d21;
+
+    transition: 0.4s ease;
+}
+
+.section5 .last-icon i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 16px;
+    font-weight: 300px;
+    color: black;
+
+    transition: 0.4s ease;
+}
+
+.section5 .last-icon a {
+    text-decoration: none;
+    color: black;
+}
+
+/* HOVER */
+.section5 .last-icon:hover {
+    transform: scale(1.12);
+}
+
+/* ============================================================
+   responsive.css  —  Shemaa / Pho Restaurant
+   Breakpoints: Laptop 1200px | Tablet 992px & 768px | Mobile 576px
+   ============================================================
+   ملاحظة: ضيفي اللينك ده بعد style.css و i18n.css:
+   <link rel="stylesheet" href="responsive.css">
+   ============================================================ */
+
+
+/* ============================================================
+   1) شاشات اللابتوب الصغيرة / العرضية  (حتى 1200px)
+   ============================================================ */
+@media (max-width: 1200px) {
+
+    .container {
+        padding-left: 40px !important;
+        padding-right: 40px !important;
+    }
+
+    /* الهيدر */
+    .header .nav-bar {
+        gap: 25px !important;
+    }
+
+    /* نص الهيرو */
+    .hero-img strong {
+        font-size: 60px !important;
+    }
+
+    /* سيكشن الدش */
+    .dish .part1 strong {
+        font-size: 45px !important;
+    }
+}
+
+
+/* ============================================================
+   2) تابلت بالعرض / لابتوب صغير  (حتى 992px)
+   ============================================================ */
+@media (max-width: 992px) {
+
+    /* ---------- الهيدر والناف بار ---------- */
+    .header .nav-bar {
+        gap: 18px !important;
+        font-size: 13px !important;
+    }
+
+    .hero-img strong {
+        font-size: 48px !important;
+    }
+
+    /* ---------- سيكشن 1 و 2 : لسه جنب بعض لكن أوفر ---------- */
+    .container .section1,
+    .container .section2 {
+        width: 50% !important;
+    }
+
+    .text1 h2,
+    .text2 h2 {
+        font-size: 40px !important;
+    }
+
+    /* ---------- سيكشن الدش : توزيع عمودي ---------- */
+    .dish .container {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        gap: 30px !important;
+    }
+
+    .dish .part1 {
+        order: 2 !important;
+        width: 100% !important;
+    }
+
+    .dish .img-dish {
+        order: 1 !important;
+        width: 80% !important;
+    }
+
+    .dish .img-dish img {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .dish .part2 {
+        order: 3 !important;
+        width: 100% !important;
+    }
+
+    /* ---------- سيكشن 4 (الهيرو التاني) ---------- */
+    .section4 .hero-img h1 {
+        font-size: 36px !important;
+    }
+
+    /* ---------- الفوتر : عمودين ---------- */
+    .top-footer {
+        flex-wrap: wrap !important;
+        gap: 40px !important;
+    }
+
+    .top-footer .logo {
+        width: 100% !important;
+    }
+
+    .nav-footer {
+        width: 55% !important;
+    }
+
+    .text-top-footer {
+        width: 40% !important;
+    }
+
+    /* النص المتحرك */
+    .moving-text span {
+        font-size: 28px !important;
+    }
+}
+
+
+/* ============================================================
+   3) تابلت بالطول  (حتى 768px)
+   ============================================================ */
+@media (max-width: 768px) {
+
+    /* ---------- الهيدر ---------- */
+    /* إخفاء قائمة الروابط وإبقاء اللغة + أيقونة المنيو */
+    .header .nav-bar {
+        display: none !important;
+    }
+
+    .header .language-selector {
+        display: block !important;
+        position: absolute !important;
+        top: 30px !important;
+        right: 80px !important;
+        z-index: 999 !important;
+    }
+
+    .header .icon {
+        display: block !important;
+    }
+
+    .hero-img strong {
+        font-size: 34px !important;
+        line-height: 1.2 !important;
+    }
+
+    .logo h1 {
+        font-size: 28px !important;
+    }
+
+    /* ---------- سيكشن 1 و 2 : فوق بعض ---------- */
+    .container .section1,
+    .container .section2 {
+        width: 100% !important;
+        min-height: 300px !important;
+    }
+
+    .text1 h2,
+    .text2 h2 {
+        font-size: 34px !important;
+    }
+
+    .text1 p,
+    .text2 p {
+        font-size: 16px !important;
+    }
+
+    /* ---------- سيكشن الدش ---------- */
+    .dish .part1 strong {
+        font-size: 34px !important;
+    }
+
+    .dish .part1 h1 {
+        font-size: 28px !important;
+    }
+
+    .dish .part2 h3 {
+        font-size: 22px !important;
+    }
+
+    /* ---------- سيكشن البحث ---------- */
+    .section3 .search-form {
+        width: 90% !important;
+    }
+
+    .section3 .button {
+        width: 90% !important;
+        padding: 15px !important;
+    }
+
+    /* ---------- الهيرو التاني ---------- */
+    .section4 .hero-img h1 {
+        font-size: 26px !important;
+        padding: 0 20px !important;
+        text-align: center !important;
+    }
+
+    .section4 .hero-img h6 {
+        font-size: 14px !important;
+    }
+
+    .btn-hero2 {
+        padding: 12px 25px !important;
+        font-size: 14px !important;
+    }
+
+    /* ---------- الفوتر ---------- */
+    .top-footer {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 30px !important;
+    }
+
+    .nav-footer {
+        width: 100% !important;
+        flex-wrap: wrap !important;
+        gap: 30px !important;
+    }
+
+    .nav-footer ul {
+        width: 45% !important;
+    }
+
+    .text-top-footer {
+        width: 100% !important;
+    }
+
+    /* الفوتر السفلي */
+    .bottom-footer {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 20px !important;
+        text-align: center !important;
+    }
+
+    .text-bottom-footer ul {
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 15px !important;
+    }
+
+    /* النص المتحرك */
+    .moving-text span {
+        font-size: 20px !important;
+        padding: 0 20px !important;
+    }
+}
+
+
+/* ============================================================
+   4) الموبايل  (حتى 576px)
+   ============================================================ */
+@media (max-width: 576px) {
+
+    .container {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    /* ---------- الهيدر ---------- */
+    .hero-img strong {
+        font-size: 26px !important;
+        letter-spacing: 1px !important;
+    }
+
+    .header .language-selector {
+        right: 70px !important;
+        top: 25px !important;
+    }
+
+    .header .language-selector select {
+        font-size: 12px !important;
+        padding: 5px 8px !important;
+    }
+
+    /* سيكشن 1 و 2 */
+    .text1 h2,
+    .text2 h2 {
+        font-size: 28px !important;
+    }
+
+    .text1 h4,
+    .text2 h4 {
+        font-size: 14px !important;
+    }
+
+    /* الدش */
+    .dish .img-dish {
+        width: 100% !important;
+    }
+
+    .dish .part1 strong {
+        font-size: 26px !important;
+    }
+
+    /* البحث */
+    .section3 .search-form input {
+        font-size: 14px !important;
+    }
+
+    /* الفوتر */
+    .nav-footer ul {
+        width: 100% !important;
+    }
+
+    .text-top-footer h2 {
+        font-size: 22px !important;
+    }
+
+    .icons-footer {
+        gap: 15px !important;
+    }
+
+    .icons-footer i {
+        font-size: 18px !important;
+    }
+
+    /* النص المتحرك */
+    .moving-text span {
+        font-size: 16px !important;
+    }
+
+    /* زرار الرجوع لفوق */
+    .last-icon span {
+        font-size: 12px !important;
+    }
+}

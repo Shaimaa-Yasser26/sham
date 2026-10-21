@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- خطوط العربي والصيني -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;800;900&family=Cairo:wght@400;500;700;900&family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- لازم يجي بعد style.css -->
+    <link rel="stylesheet" href="i18n.css">
+
+    <title>Shemaa-Restaurant</title>
+</head>
+
+<body>
+
+    <!-- =========================================================
+         MAIN SECTION
+          ========================================================= -->
+
+    <section class="section">
+
+        <!-- HEADER -->
+        <div class="header">
+
+            <!-- HERO IMAGE -->
+            <div class="hero-img">
+                <img src="hero.jpeg" alt="hero image">
+
+
+                <strong data-i18n="hero.title">
+                    VIETNAMESE <br>
+                    STREET FOOD
+                </strong>
+            </div>
+
+            <!-- LOGO -->
+            <div class="logo">
+                <a href="#">
+                    <img src="logo.png" alt="logo">
+                    <h1>Pho</h1>
+                </a>
+            </div>
+
+            <!-- NAV -->
+            <div class="nav">
+
+                <ul class="nav-bar">
+
+                    <li>
+                        <a href="http://127.0.0.1:5500/menu/menu.html">
+                          <span data-text="Menu" data-i18n="nav.menu">Menu</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="reservations.html">
+                            <span data-text="Reservations" data-i18n="nav.reservations">Reservations</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="http://127.0.0.1:5500/locations/locations.html">
+                            <span data-text="Locations" data-i18n="nav.locations">Locations</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="nutrition.html">
+                            <span data-text="Nutrition" data-i18n="nav.nutrition">Nutrition</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="gift-vouchers.html">
+                            <span data-text="Gift Vouchers" data-i18n="nav.giftVouchers">Gift Vouchers</span>
+                        </a>
+                    </li>
+
+                   <li class="nav-item1">
+                        <a href="pho-to-go.html">
+                            <span data-text="Pho To GO" data-i18n="nav.phoToGo">Pho To GO</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item2">
+                        <a href="book-table.html">
+                            <span data-text="Book A Table" data-i18n="nav.bookATable">Book A Table</span>
+                        </a>
+                    </li>
+
+                </ul>
+
+                <!-- LANGUAGE SELECTOR -->
+                <div class="language-selector">
+                    <select id="language-select" aria-label="Choose language">
+                        <option value="en">English</option>
+                        <option value="ar">العربية</option>
+                        <option value="zh">中文</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <!-- MENU ICON -->
+            <a href="http://127.0.0.1:5500/nav-icon/nav.html">
+                <div class="icon">
+                    <span class="first-child"></span>
+                    <span class="last-child"></span>
+                </div>
+            </a>
+
+
+        </div>
+
+
+
+
+        <!-- =========================================================
+             SECTION 1 & SECTION 2
+             ========================================================= -->
+
+        <div class="container">
+
+            <!-- SECTION 1 -->
+            <section class="section1">
+
+                <div class="text1 reveal">
+
+                    <h2 data-i18n="menuSection.title">Our Menu</h2>
+
+                    <br>
+
+                    <p data-i18n="menuSection.text">
+                        Everything is made fresh in <br>
+                        each restaurant, every day.
+                    </p>
+
+                    <br>
+
+                    <a href="/menu/menu.html">
+                        <h4 data-i18n="menuSection.cta">View Menu</h4>
+                    </a>
+
+                    <br>
+
+                </div>
+
+            </section>
+
+
+            <!-- SECTION 2 -->
+            <section class="section2">
+
+                <div class="text2 reveal">
+
+                    <h2 data-i18n="togo.title">Pho To GO</h2>
+
+                    <br>
+
+                    <p data-i18n="togo.text">
+                        Order for delivery or <br>
+                        Click &amp; Collect
+                    </p>
+
+                    <br>
+
+                    <h4 data-i18n="togo.cta">Order Now</h4>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         DISH SECTION
+         ========================================================= -->
+
+    <section class="dish">
+
+        <div class="container">
+
+            <!-- TEXT -->
+            <div class="part1 reveal">
+
+                <strong data-i18n="dish.tagline">
+                    SOMETHING <br>
+                    PHO EVERYONE
+                </strong>
+
+                <br>
+
+                <h1 data-i18n="dish.title">Nutrition Info</h1>
+
+            </div>
+
+
+            <!-- DISH IMAGE -->
+            <div class="img-dish">
+
+                <img src="Dish1.jpg" alt="Dish">
+
+            </div>
+
+
+            <!-- DISH INFO -->
+            <div class="part2">
+
+                <h3>98%</h3>
+
+                <h3 data-i18n="dish.glutenFree">Gluten Free</h3>
+
+                <h6 data-i18n="dish.accredited">Accredited by coeliac UK</h6>
+
+            </div>
+
+        </div>
+
+    </section>
+
+<!--------------------------------------------------SECTION3------------------------------------------->
+    <section class="section3">
+
+    <div class="container">
+
+        <div class="text">
+            <h2 data-i18n="find.title">Find A Pho</h2>
+        </div>
+
+        <form class="search-form">
+            <input type="text" name="search" id="search" data-i18n-placeholder="find.placeholder" placeholder="search for products" required>
+            <button type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </form>
+
+
+        <a href="/locations/locations.html">
+            <button class="button" data-i18n="find.cta">
+                View All Locations
+            </button>
+        </a>
+
+    </div>
+
+</section>
+
+    <!-- =========================================================
+         SECTION 4 - hero image 2
+         ========================================================= -->
+
+    <section class="section4">
+
+        <div class="container">
+
+            <div class="hero-img">
+                <img src="hero2.jpg" alt="hero2image">
+
+                <h1 data-i18n="hero2.title"> PINK SRIRACHA HAS LANDED!</h1>
+                <h6 data-i18n="hero2.subtitle"> Introducing... the world’s first hot pink sriracha!</h6>
+                <button class="btn-hero2" data-i18n="hero2.cta">Learn More</button>
+            </div>
+
+        </div>
+
+        <!-- =========================================================
+     MOVING TEXT
+     ========================================================= -->
+        <div class="moving">
+
+
+            <div class="moving-text">
+
+                <div class="moving-text-track">
+
+                    <span data-i18n="marquee.fresh">FRESH INGREDIENTS</span>
+                    <span data-i18n="marquee.noodles">NOODLES, RICE &amp; BEER</span>
+                    <span data-i18n="marquee.delicious">SIMPLY DELICIOUS</span>
+                    <span data-i18n="marquee.fresh">FRESH INGREDIENTS</span>
+                    <span data-i18n="marquee.noodles">NOODLES, RICE &amp; BEER</span>
+                    <span data-i18n="marquee.delicious">SIMPLY DELICIOUS</span>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- =========================================================
+FOOTER
+     ========================================================= -->
+
+    <section class="footer">
+        <div class="top-footer">
+
+           <div class="logo">
+                <img src="logo-footer.png" alt="logo-footer.png">
+                <h1>Pho</h1>
+            </div>
+            <div class="nav-footer">
+
+                <ul class="about-us">
+                    <h6 data-i18n="footer.aboutUs">About Us</h6>
+                    <li><a href="Locations.html" data-i18n="footer.locations">Locations</a></li>
+                    <li><a href="Our Story.html" data-i18n="footer.ourStory">Our Story</a></li>
+                    <li><a href="Franchise.html" data-i18n="footer.franchise">Franchise</a></li>
+                    <li><a href="Careers.html" data-i18n="footer.careers">Careers</a></li>
+                    <li><a href="Contact Us.html" data-i18n="footer.contactUs">Contact Us</a></li>
+                    <li><a href="FAQs.html" data-i18n="footer.faqs">FAQs</a></li>
+                </ul>
+
+                <ul class="our-menu">
+                    <h6 data-i18n="footer.ourMenuHeading">OUR MENU</h6>
+                    <li><a href="Our Menu.html" data-i18n="footer.ourMenuLink">OUR MENU</a></li>
+                    <li><a href="Nutritional Info.html" data-i18n="footer.nutritionalInfo">Nutritional Info</a></li>
+                    <li><a href="Gluten Free.html" data-i18n="footer.glutenFree">Gluten Free</a></li>
+                    <li><a href="Allergens.html" data-i18n="footer.allergens">Allergens</a></li>
+                </ul>
+
+                <ul class="more-sham">
+                    <h6 data-i18n="footer.moreHeading">MORE PHO</h6>
+                    <li><a href="sham To Go.html" data-i18n="footer.phoToGo">Pho To Go</a></li>
+                    <li><a href="Gift Vouchers.html" data-i18n="footer.giftVouchers">Gift Vouchers</a></li>
+                    <li><a href="Just sham Students.html" data-i18n="footer.phoStudents">Just Pho Students</a></li>
+                    <li><a href="Gender Pay.html" data-i18n="footer.genderPay">Gender Pay</a></li>
+                    <li><a href="Reporting.html" data-i18n="footer.reporting">Reporting</a></li>
+                </ul>
+
+            </div>
+
+            <div class="text-top-footer">
+                <h6 data-i18n="newsletter.label"> Newsletter Sign Up</h6>
+                <h2 data-i18n="newsletter.title">Keep Up To Date With All Things Pho</h2>
+
+                <!-- SIGN UP -->
+                <a href="http://localhost:3000/sign%20in/sign.html" class="sign-link">
+                    <h3 class="sign-up" data-i18n="newsletter.cta">Sign Up</h3>
+                </a>
+
+
+                <div class="icon-arrow">
+                    <a href="sign in/sign.html">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section5">
+        <div class="bottom-footer">
+
+                <div class="icons-footer">
+                    <!-- Facebook -->
+                    <a href="https://www.facebook.com/PhoRestaurants" target="_blank">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/phorestaurants/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <i class="fa-brands fa-square-x-twitter"></i>
+                    <i class="fa-brands fa-snapchat"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+
+                <div class="text-bottom-footer">
+                    <ul>
+                        <li><a href="Terms & Conditions.html" data-i18n="legal.terms">Terms & Conditions</a></li>
+                        <li><a href="Privacy.html" data-i18n="legal.privacy">Privacy</a></li>
+                        <li><a href="Cookies Policy.html" data-i18n="legal.cookies">Cookies Policy</a></li>
+                        <li><a href="©Pho 2024 |creative by ignite.htm" data-i18n="legal.copyright">©Pho 2024 | creative by ignite</a></li>
+                    </ul>
+                </div>
+
+                <div class="last-icon">
+                    <a href="#top">
+                        <span data-i18n="legal.top">Top</span>
+                        <i class="fa fa-arrow-up"></i>
+                    </a>
+                </div>
+
+        </div>
+    </section>
+
+<div id="qrcode"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+<script>
+    new QRCode(
+        document.getElementById("qrcode"),
+        "https://shaimaa-yasser26.github.io/sham/"
+    );
+</script>
+
+<script src="i18n.js"></script>
+<script src="script.js"></script>
+
+</body>
+
+</html>

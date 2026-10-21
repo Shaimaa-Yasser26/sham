@@ -1,0 +1,77 @@
+{
+  "hero": {
+    "title": "VIETNAMESE <br> STREET FOOD"
+  },
+  "nav": {
+    "menu": "Menu",
+    "reservations": "Reservations",
+    "locations": "Locations",
+    "nutrition": "Nutrition",
+    "giftVouchers": "Gift Vouchers",
+    "phoToGo": "Pho To GO",
+    "bookATable": "Book A Table"
+  },
+  "menuSection": {
+    "title": "Our Menu",
+    "text": "Everything is made fresh in <br> each restaurant, every day.",
+    "cta": "View Menu"
+  },
+  "togo": {
+    "title": "Pho To GO",
+    "text": "Order for delivery or <br> Click & Collect",
+    "cta": "Order Now"
+  },
+  "dish": {
+    "tagline": "SOMETHING <br> PHO EVERYONE",
+    "title": "Nutrition Info",
+    "glutenFree": "Gluten Free",
+    "accredited": "Accredited by coeliac UK"
+  },
+  "find": {
+    "title": "Find A Pho",
+    "placeholder": "search for products",
+    "cta": "View All Locations"
+  },
+  "hero2": {
+    "title": "PINK SRIRACHA HAS LANDED!",
+    "subtitle": "Introducing... the world’s first hot pink sriracha!",
+    "cta": "Learn More"
+  },
+  "marquee": {
+    "fresh": "FRESH INGREDIENTS",
+    "noodles": "NOODLES, RICE & BEER",
+    "delicious": "SIMPLY DELICIOUS"
+  },
+  "footer": {
+    "aboutUs": "About Us",
+    "locations": "Locations",
+    "ourStory": "Our Story",
+    "franchise": "Franchise",
+    "careers": "Careers",
+    "contactUs": "Contact Us",
+    "faqs": "FAQs",
+    "ourMenuHeading": "OUR MENU",
+    "ourMenuLink": "OUR MENU",
+    "nutritionalInfo": "Nutritional Info",
+    "glutenFree": "Gluten Free",
+    "allergens": "Allergens",
+    "moreHeading": "MORE PHO",
+    "phoToGo": "Pho To Go",
+    "giftVouchers": "Gift Vouchers",
+    "phoStudents": "Just Pho Students",
+    "genderPay": "Gender Pay",
+    "reporting": "Reporting"
+  },
+  "newsletter": {
+    "label": "Newsletter Sign Up",
+    "title": "Keep Up To Date With All Things Pho",
+    "cta": "Sign Up"
+  },
+  "legal": {
+    "terms": "Terms & Conditions",
+    "privacy": "Privacy",
+    "cookies": "Cookies Policy",
+    "copyright": "©Pho 2024 | creative by ignite",
+    "top": "Top"
+  }
+}
